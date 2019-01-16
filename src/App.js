@@ -10,7 +10,7 @@ class App extends Component {
       <div className="App">
       <Header></Header>
 
-      <div className="cards">
+      <div className="Cards">
       <Example></Example>
       <Example></Example>
       <Example></Example>
