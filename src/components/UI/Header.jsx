@@ -11,6 +11,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
+
 import './Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -31,7 +32,8 @@ export class Header extends Component{
   }
 render(){
     return(
-<div>
+
+        <div>
         <Navbar color="light" light expand="md">
           <NavbarBrand href="/"> <h2 className="my-0 mr-md-auto font-weight-normal Name">Nika <small className="text-muted">van Berkel</small></h2></NavbarBrand> 
           <NavbarToggler onClick={this.toggle} />
