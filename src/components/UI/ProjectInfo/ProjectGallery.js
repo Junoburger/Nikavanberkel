@@ -20,7 +20,7 @@ console.log("determine action")
             <div>
             <div style={divStyle}>
               <Card>
-                <CardImg top width="100%" src ={project.src}  alt={project.altText} />
+                <CardImg  top width="100%" src ={project.src}  alt={project.altText} />
                 <CardBody>
                   <CardTitle>{project.title}</CardTitle>
                   <CardSubtitle>{project.subTitle}</CardSubtitle>
