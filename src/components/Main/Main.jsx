@@ -6,7 +6,7 @@ import Tree from 'react-d3-tree';
 
 const containerStyles = {
     width: '100%',
-    height: '100vh',
+    height: '50vh',
   }
 
   const debugData = [
