@@ -1,11 +1,26 @@
 .Cards{
-    display: flex;
+
+  display: flex;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
   }
-  
+  .img{
+    max-height: 295px;
+    max-width: 274px;
+    align-self: baseline;
+  }
+  .flexWrap{
+
+  }
+
   @media only screen and (max-width: 770px) {
-  .Cards{
-    flex-direction: column;
-  }
+      .Cards{
+        flex-direction: column;
+      }
   }
   
   .img__description_layer {
@@ -41,5 +56,3 @@
   .img__wrap:hover .img__description {
     transform: translateY(0);
   }
-
-  

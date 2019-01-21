@@ -4,7 +4,7 @@ export const Bio = (props) => {
 
     return(
         <div className="container">
-         <div className="jumbotron">
+         <div>
              <h1>Bio</h1>
         </div>
         </div>

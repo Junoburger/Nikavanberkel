@@ -4,7 +4,7 @@ export const Contact = (props) => {
 
     return(
         <div className="container">
-         <div className="jumbotron">
+         <div>
              <h1>Contact</h1>
         </div>
         </div>

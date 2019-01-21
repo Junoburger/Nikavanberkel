@@ -15,7 +15,7 @@ class App extends PureComponent {
       <Router>
       <div className="App">
        <Header></Header>
-        <div className="Cards">
+        <div>
         <Route exact path="/" component={Main}/>
         <Route exact path="/bio" component={Bio}/>
         <Route exact path="/projects" component={Projects}/>

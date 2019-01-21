@@ -4,7 +4,7 @@ export const News = (props) => {
 
     return(
         <div className="container">
-         <div className="jumbotron">
+         <div>
              <h1>News</h1>
         </div>
         </div>
