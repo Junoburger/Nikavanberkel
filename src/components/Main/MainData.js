@@ -5,10 +5,10 @@ export const MainData = [
       name: "Main",
       children: [
         {
-          name: 'Bio',
+          name: <a href="/bio">Bio</a>,
         },
         {
-          name: "Projects",
+          name: <a href="/projects">Projects</a>,
           attributes: {
             // keyA: 'val A',
             // keyB: 'val B',
@@ -25,10 +25,10 @@ export const MainData = [
           ],
         },
         {
-          name: "News",
+          name: <a href="/news">News</a>,
         },
         {
-            name: "Contact",
+            name: <a href="/contact">Contact</a>,
         },
       ],
     },
