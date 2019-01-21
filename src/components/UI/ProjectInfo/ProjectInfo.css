@@ -1,12 +1,10 @@
 .Cards{
-
   display: flex;
-
   flex-wrap: wrap;
   flex-direction: row;
-  align-content: flex-start;
+  align-content: center;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   }
   .img{
     max-height: 295px;
