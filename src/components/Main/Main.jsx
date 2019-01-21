@@ -2,46 +2,15 @@ import React from 'react'
 import './Main.css'
 import Typed from 'react-typed';
 import Tree from 'react-d3-tree';
-
+import {MainData} from './MainData.js'
 
 const containerStyles = {
     width: '100%',
     height: '50vh',
+    fontSize: '21pt'
   }
 
-  const debugData = [
-    {
-      name: "Main",
-      children: [
-        {
-          name: "Bio",
-        },
-        {
-          name: "Projects",
-          attributes: {
-            // keyA: 'val A',
-            // keyB: 'val B',
-            // keyC: 'val C',
-          },
-          _collapsed: true,
-          children:[
-            {
-                name: '1: Project Name',
-              },
-              {
-                name: '2: Project  Name',
-              },
-          ],
-        },
-        {
-          name: "News",
-        },
-        {
-            name: "Contact",
-        },
-      ],
-    },
-  ];
+ 
   export default class Main extends React.PureComponent{
 
     state = {}
@@ -59,7 +28,7 @@ const containerStyles = {
       return(
         <div>
 
-        <div className="container border">
+        <div className="container ">
          <div>
              <h1>Welcome to</h1>
             
@@ -73,7 +42,7 @@ const containerStyles = {
         </div>
         <div style={containerStyles} ref={tc => (this.treeContainer = tc)}>
         <Tree 
-          data={debugData} 
+          data={MainData} 
           translate={this.state.translate} 
           orientation={'horizontal'}
         />
