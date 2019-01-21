@@ -2,7 +2,7 @@ import image_1 from '../../../assets/images/ALB_view 2.jpg'
 import image_2 from '../../../assets/images/ALB_view 1.jpg'
 import image_3 from '../../../assets/images/ALB_view 3.jpg'
 import image_4 from '../../../assets/images/axo 1.jpg'
-import image_5 from '../../../assets/images/Screen Shot 2017-12-17 at 20.46.27.png'
+import image_5 from '../../../assets/images/axo 2.jpg'
 import image_6 from '../../../assets/images/ALB_section_171219_b&w_nodim.jpg'
 
 

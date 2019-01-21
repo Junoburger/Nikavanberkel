@@ -46,5 +46,6 @@ import { image1, image2, image3, image4, image5, image6 } from './projectImages'
           title: 'ALB_view 1',
           subTitle: 'short intro 1',
           description: 'a short description 1',
-          }
+          },
+          
 ]
