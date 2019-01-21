@@ -5,7 +5,7 @@ import './Projects.css'
 export const Projects = (props) => {
 
     return(
-        <div>
+        <div className="">
          <div>
            <h1>Projects</h1>
          </div>

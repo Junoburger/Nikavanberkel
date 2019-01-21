@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 import {Header} from './components/UI/Header';
-import {Main} from './components/Main/Main'
+import Main from './components/Main/Main'
 import {Bio} from './components/Bio/Bio'
 import {News} from './components/News/News'
 import {Contact} from './components/Contact/Contact'
