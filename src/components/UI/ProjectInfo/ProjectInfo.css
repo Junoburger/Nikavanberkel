@@ -8,3 +8,38 @@
   }
   }
   
+  .img__description_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 196, 156, 0.8);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* transition effect. not necessary */
+    transition: opacity .3s, visibility .3s;
+  }
+
+  .img__wrap:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+    border-radius: 3px;
+  }
+
+  .img__description {
+    transition: .5s;
+    transform: translateY(1em);
+    font-size: 21pt;
+  }
+  
+  .img__wrap:hover .img__description {
+    transform: translateY(0);
+  }
+
+  
