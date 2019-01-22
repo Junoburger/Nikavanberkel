@@ -1,14 +1,20 @@
 import React from 'react'
 
+const Bio = <a href="/bio">Bio</a>
+const Projects = <a href="/projects">Projects</a>
+const News = <a href="/news">News</a>
+const Contact = <a href="/contact">Contact</a>
+
+
 export const MainData = [
     {
       name: "Main",
       children: [
         {
-          name: <a href="/bio">Bio</a>,
+          name: Bio,
         },
         {
-          name: <a href="/projects">Projects</a>,
+          name: Projects,
           attributes: {
             // keyA: 'val A',
             // keyB: 'val B',
@@ -25,10 +31,10 @@ export const MainData = [
           ],
         },
         {
-          name: <a href="/news">News</a>,
+          name: News,
         },
         {
-            name: <a href="/contact">Contact</a>,
+            name: Contact,
         },
       ],
     },

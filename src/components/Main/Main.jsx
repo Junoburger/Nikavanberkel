@@ -29,11 +29,9 @@ const containerStyles = {
         <div>
 
         <div className="container ">
-         <div>
-             <h1>Welcome to</h1>
-            
+         <div>            
              <Typed className="Typed"
-                    strings={['Nika van Berkel']} 
+                    strings={['Welcome']} 
                     typeSpeed={75} 
                 />
                 
