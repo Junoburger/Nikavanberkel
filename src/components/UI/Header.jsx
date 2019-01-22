@@ -3,13 +3,14 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink} from 'reactstrap';
 
 import './Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Route } from 'react-router-dom';
+import { Welcome } from './../Main/Welcome';
 
 
 export class Header extends Component{
@@ -36,6 +37,7 @@ render(){
               </div>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
+                <Route exact path="/"  component={Welcome}></Route>  
                 <Nav className="ml-auto" navbar>
                 <NavItem>
                 <NavLink className="navLine" href="/projects">Archive</NavLink>

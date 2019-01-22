@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Bio = <a href="/bio">Bio</a>
+const Bio = <a  href="/about">About</a>
 const Projects = <a href="/projects">Archive</a>
 const News = <a href="/news">News</a>
 

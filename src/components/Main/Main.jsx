@@ -1,9 +1,8 @@
 import React from 'react'
 import './Main.css'
 import Tree from 'react-d3-tree';
-import {Welcome} from './Welcome'
 import {MainData} from './MainData.js'
-import { Route } from 'react-router-dom';
+
 
 const containerStyles = {
     width: '100%',
@@ -11,6 +10,16 @@ const containerStyles = {
     fontSize: '21pt',
     display: ' flex'
   }
+  const svgSquare = {
+    shape: 'rect',
+    shapeProps: {
+      width: 20,
+      height: 20,
+      x: -0,
+      y: -10,
+    }
+  }
+
 
  
   export default class Main extends React.PureComponent{
@@ -29,7 +38,7 @@ const containerStyles = {
       render() {
       return(
         <div>
-     <Route exact path="/"  component={Welcome}></Route>  
+    
         <div style={{display:'flex', justifyContent:'center'}}>
         <div style={containerStyles} ref={tc => (this.treeContainer = tc)}>
         <Tree 
@@ -37,6 +46,8 @@ const containerStyles = {
           translate={this.state.translate} 
           orientation={'horizontal'}
           pathFunc={'elbow'}
+          nodeSvgShape={svgSquare}
+          textLayout={{textAnchor: "start", x: 25, y: -10, transform: undefined }}
         />
       </div>
       </div>
