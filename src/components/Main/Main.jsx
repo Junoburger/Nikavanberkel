@@ -1,13 +1,15 @@
 import React from 'react'
 import './Main.css'
-import Typed from 'react-typed';
 import Tree from 'react-d3-tree';
+import {Welcome} from './Welcome'
 import {MainData} from './MainData.js'
+import { Route } from 'react-router-dom';
 
 const containerStyles = {
     width: '100%',
     height: '50vh',
-    fontSize: '21pt'
+    fontSize: '21pt',
+    display: ' flex'
   }
 
  
@@ -27,23 +29,15 @@ const containerStyles = {
       render() {
       return(
         <div>
-
-        <div className="container ">
-         <div>            
-             <Typed className="Typed"
-                    strings={['Welcome']} 
-                    typeSpeed={75} 
-                />
-                
-        </div>
-        
-        </div>
+     <Route exact path="/"  component={Welcome}></Route>  
+        <div style={{display:'flex', justifyContent:'center'}}>
         <div style={containerStyles} ref={tc => (this.treeContainer = tc)}>
         <Tree 
           data={MainData} 
           translate={this.state.translate} 
           orientation={'horizontal'}
         />
+      </div>
       </div>
         </div>
     )
