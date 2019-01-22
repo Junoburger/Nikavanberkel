@@ -36,6 +36,7 @@ const containerStyles = {
           data={MainData} 
           translate={this.state.translate} 
           orientation={'horizontal'}
+          pathFunc={'elbow'}
         />
       </div>
       </div>

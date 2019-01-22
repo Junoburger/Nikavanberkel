@@ -2,13 +2,12 @@ import React from 'react'
 
 
 const Bio = <a href="/bio">Bio</a>
-const Projects = <a href="/projects">Projects</a>
+const Projects = <a href="/projects">Archive</a>
 const News = <a href="/news">News</a>
-const Contact = <a href="/contact">Contact</a>
 
 export const MainData = [
   {
-    name: "Main",
+    name: "",
     children: [
       {
         name: Bio,
@@ -32,9 +31,6 @@ export const MainData = [
       },
       {
         name: News,
-      },
-      {
-        name: Contact,
       },
     ],
   },

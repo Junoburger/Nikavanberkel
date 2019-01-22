@@ -7,7 +7,7 @@ export const Projects = () => {
     return(
         <div className="">
          <div>
-           <h1>Projects</h1>
+           <h1>Archive</h1>
          </div>
           <div className="flexWrap">
             <ProjectInfo></ProjectInfo>

@@ -31,22 +31,18 @@ render(){
 
         <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/"> <h2 className="my-0 mr-md-auto font-weight-normal Name">Nika <small className="text-muted">van Berkel</small></h2></NavbarBrand> 
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink className="navLine" href="/bio">Bio</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink className="navLine" href="/projects">Projects</NavLink>
-              </NavItem>
-              <NavItem>
+             <div>
+              <a className="About" href="/about">About</a>
+              </div>
+                <NavbarToggler onClick={this.toggle} />
+                <Collapse isOpen={this.state.isOpen} navbar>
+                <Nav className="ml-auto" navbar>
+                <NavItem>
+                <NavLink className="navLine" href="/projects">Archive</NavLink>
+               </NavItem>
+                <NavItem>
                 <NavLink className="navLine" href="/news">News</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink className="navLine" href="/contact">Contact</NavLink>
-              </NavItem>
+                </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

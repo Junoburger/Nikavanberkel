@@ -13,6 +13,11 @@ Link{
 
 }
 
-.Name{
- 
+.About{
+    text-decoration: none;
+    color: grey;
+}
+.About:hover{
+    color: black;
+    text-decoration: none;
 }

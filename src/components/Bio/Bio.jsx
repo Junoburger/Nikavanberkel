@@ -6,7 +6,7 @@ export const Bio = (props) => {
     return(
         <div className="container">
          <div className="border">
-             <h1>Bio</h1>
+             <h1>About</h1>
         </div>
 
         </div>
