@@ -14,15 +14,15 @@ export const MainData = [
       },
       {
         name: Projects,
-        attributes: {
-          // keyA: 'val A',
-          // keyB: 'val B',
-          // keyC: 'val C',
-        },
         _collapsed: true,
         children:[
           {
             name: '1: Project Name',
+            attributes: {
+              // pictureA: 'description A',
+              // pictureB: 'description B',
+              // pictureC: 'description C',
+            },
           },
           {
             name: '2: Project  Name',

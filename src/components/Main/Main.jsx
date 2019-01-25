@@ -2,25 +2,8 @@ import React from 'react'
 import './Main.css'
 import Tree from 'react-d3-tree';
 import {MainData} from './MainData.js'
-
-
-const containerStyles = {
-    width: '100%',
-    height: '50vh',
-    fontSize: '21pt',
-    display: ' flex'
-  }
-  const svgSquare = {
-    shape: 'rect',
-    shapeProps: {
-      width: 20,
-      height: 20,
-      x: -0,
-      y: -10,
-    }
-  }
-
-
+import {containerStyles} from './ContainerStyles'
+import {svgSquare} from './SVGSquare'
  
   export default class Main extends React.PureComponent{
 
@@ -38,7 +21,6 @@ const containerStyles = {
       render() {
       return(
         <div>
-    
         <div style={{display:'flex', justifyContent:'center'}}>
         <div style={containerStyles} ref={tc => (this.treeContainer = tc)}>
         <Tree 
@@ -47,7 +29,7 @@ const containerStyles = {
           orientation={'horizontal'}
           pathFunc={'elbow'}
           nodeSvgShape={svgSquare}
-          textLayout={{textAnchor: "start", x: 25, y: -10, transform: undefined }}
+          textLayout={{textAnchor: "start", x: 25, y: 0, transform: undefined }}
         />
       </div>
       </div>
