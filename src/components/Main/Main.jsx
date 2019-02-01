@@ -12,6 +12,7 @@ import {
   CarouselCaption
 } from 'reactstrap';
 import {items} from '../UI/ProjectInfo/projectObjects'
+import {Sidenav} from '../UI/sideNav/SideNav'
 
  
   export default class Main extends React.PureComponent{
@@ -72,8 +73,8 @@ import {items} from '../UI/ProjectInfo/projectObjects'
               <img src={item.src} alt={item.altText} />
 
               <CarouselCaption
-             captionText={item.caption}
-             captionHeader={item.title} />
+             captionText={item.title}
+             captionHeader={item.subTitle} />
             </CarouselItem>
           );
         });
@@ -106,14 +107,15 @@ import {items} from '../UI/ProjectInfo/projectObjects'
         <CarouselControl
          direction="prev"
          directionText="Previous"
-         onClickHandler={this.previous} />
+         onClickHandler={this.previous} className="prev" />
 
         <CarouselControl 
         direction="next"
          directionText="Next"
-         onClickHandler={this.next} />
+         onClickHandler={this.next} className="next"/>
         </Carousel>
           </div>
+          <Sidenav/>
         </div>
     )
       }
