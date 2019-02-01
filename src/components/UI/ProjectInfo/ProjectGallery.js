@@ -1,24 +1,31 @@
 import React from 'react';
-import { Card, CardText, CardTitle, CardSubtitle } from 'reactstrap';
-import {projects} from './projectObjects'
+import { Card } from 'reactstrap';
+import {items} from './projectObjects'
 import './ProjectInfo.css'
 
 
 
-export const gallery = projects.map((project, i) => {
+export const gallery = items.map((project, i) => {
         return (
-            <div key={i}>
+          <div>
+              <div style={{width:'620px', minHeight:'200px' ,background:'transparent', float:'right'}}></div>
+
+            <div key={i} style={{float:'left'}}>
               <Card style={{border:'none'}}>
               <div className="img__wrap" >
                 <img  className="img" src ={project.src}  alt={project.altText} />
                 <div className="img__description_layer">
-                  <CardTitle className="img__description">{project.title}</CardTitle>
-                  <CardSubtitle >{project.subTitle}</CardSubtitle>
-                  <CardText >{project.description}</CardText>
+                  <span className="img__description">{project.title}</span>
+                  <span >{project.subTitle}</span>
+                  <span >{project.description}</span>
                  </div>
                 </div>
               </Card>
+            
             </div>
+              <div style={{width:'620px', minHeight:'200px' ,background:'transparent', float:'right'}}></div>
+            </div>
+            
           );
     });
 

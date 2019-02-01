@@ -7,8 +7,8 @@
   justify-content: center;
   }
   .img{
-    max-height: auto;
-    max-width: 420px;
+    min-height: 200px;
+    max-width: 620px;
     align-self: baseline;
   }
   .flexWrap{

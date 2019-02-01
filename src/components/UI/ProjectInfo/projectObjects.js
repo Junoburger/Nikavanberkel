@@ -4,7 +4,7 @@ import { image1, image2, image3, image4, image5, image6 } from './projectImages'
 // const size = Math.ceil(Math.random() * 1000);
 
 
-  export const projects = [
+ export const items = [
     {
     src: image1,
     altText: 'image1',
@@ -46,6 +46,6 @@ import { image1, image2, image3, image4, image5, image6 } from './projectImages'
           title: 'ALB_view 1',
           subTitle: 'short intro 1',
           description: 'a short description 1',
-          },
-          
+          },        
 ]
+
