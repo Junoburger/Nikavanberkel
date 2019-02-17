@@ -2,15 +2,16 @@ import React from 'react';
 import { Card } from 'reactstrap';
 import {items} from './projectObjects'
 import './ProjectInfo.css'
+import {Sidenav} from '../sideNav/SideNav'
 
 
 
 export const gallery = items.map((project, i) => {
         return (
-          <div>
-              <div style={{width:'620px', minHeight:'200px' ,background:'transparent', float:'right'}}></div>
+          <div key={i}>
+           
 
-            <div key={i} style={{float:'left'}}>
+            <div style={{marginLeft:'400px'}}>
               <Card style={{border:'none'}}>
               <div className="img__wrap" >
                 <img  className="img" src ={project.src}  alt={project.altText} />
@@ -23,7 +24,8 @@ export const gallery = items.map((project, i) => {
               </Card>
             
             </div>
-              <div style={{width:'620px', minHeight:'200px' ,background:'transparent', float:'right'}}></div>
+              
+              <Sidenav/>
             </div>
             
           );

@@ -12,7 +12,6 @@ import {
   CarouselCaption
 } from 'reactstrap';
 import {items} from '../UI/ProjectInfo/projectObjects'
-import {Sidenav} from '../UI/sideNav/SideNav'
 
  
   export default class Main extends React.PureComponent{
@@ -50,17 +49,6 @@ import {Sidenav} from '../UI/sideNav/SideNav'
       this.setState({ activeIndex: newIndex });
     }
 
-    // state = {}
-    // componentDidMount() {
-    //     const dimensions = this.treeContainer.getBoundingClientRect();
-    //     this.setState({
-    //       translate: {
-    //         x: dimensions.width / 2,
-    //         y: dimensions.height / 2
-    //       }
-    //     });
-    //   }
-
       render() {
         const { activeIndex } = this.state;
         const slides = items.map((item) => {
@@ -82,17 +70,6 @@ import {Sidenav} from '../UI/sideNav/SideNav'
       return(
         <div>
            <div style={{display:'flex', justifyContent:'center'}}>
-
-        {/* <div style={containerStyles} ref={tc => (this.treeContainer = tc)}>
-        <Tree 
-          data={MainData} 
-          translate={this.state.translate} 
-          orientation={'horizontal'}
-          pathFunc={'elbow'}
-          nodeSvgShape={svgSquare}
-          textLayout={{textAnchor: "start", x: 25, y: 0, transform: undefined }}
-        />
-      </div> */}
       
       <Carousel
         activeIndex={activeIndex}
@@ -115,7 +92,7 @@ import {Sidenav} from '../UI/sideNav/SideNav'
          onClickHandler={this.next} className="next"/>
         </Carousel>
           </div>
-          <Sidenav/>
+         
         </div>
     )
       }
