@@ -7,7 +7,7 @@ return (
     <div className="container ">
     <div>            
         <Typed className="Typed"
-               strings={['Welcome']} 
+               strings={['Nika']} 
                typeSpeed={75} 
            />
    </div>

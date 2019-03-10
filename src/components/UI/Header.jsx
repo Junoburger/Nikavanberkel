@@ -43,7 +43,7 @@ render(){
                 <NavLink className="navLine" href="/projects">Archive</NavLink>
                </NavItem>
                 <NavItem>
-                <NavLink className="navLine" href="/news">News</NavLink>
+                <NavLink className="navLine" href="/">Work</NavLink>
                 </NavItem>
             </Nav>
           </Collapse>
