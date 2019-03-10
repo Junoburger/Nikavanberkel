@@ -45,6 +45,9 @@ render(){
                 <NavItem>
                 <NavLink className="navLine" href="/news">News</NavLink>
                 </NavItem>
+                <NavItem>
+                <NavLink className="navLine" href="/">Frontpage</NavLink>
+                </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
