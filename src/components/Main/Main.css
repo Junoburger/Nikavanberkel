@@ -31,3 +31,9 @@ img{
   max-width: 100vw;
   max-height: 100vh;
 }
+
+.sideNavParent{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 150px;
+}

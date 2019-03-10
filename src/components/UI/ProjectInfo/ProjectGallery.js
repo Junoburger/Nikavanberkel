@@ -2,7 +2,6 @@ import React from 'react';
 import { Card } from 'reactstrap';
 import {items} from './projectObjects'
 import './ProjectInfo.css'
-import {Sidenav} from '../sideNav/SideNav'
 
 
 
@@ -25,10 +24,10 @@ export const gallery = items.map((project, i) => {
             
             </div>
               
-              <Sidenav/>
             </div>
             
           );
     });
 
+    
     

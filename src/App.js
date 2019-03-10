@@ -4,7 +4,6 @@ import './App.css';
 import {Header} from './components/UI/Header';
 import Main from './components/Main/Main'
 import {Bio} from './components/Bio/Bio'
-import {News} from './components/News/News'
 import {Projects} from './components/Projects/Projects';
 
 
@@ -18,8 +17,6 @@ class App extends PureComponent {
         <Route exact path="/" component={Main}/>
         <Route exact path="/about" component={Bio}/>
         <Route exact path="/projects" component={Projects}/>
-        <Route exact path="/news" component={News}/>
-
         </div>
       </div>
       </Router>

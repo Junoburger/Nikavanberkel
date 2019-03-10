@@ -1,6 +1,5 @@
 import React from 'react'
 import './Main.css'
-import {items} from '../UI/ProjectInfo/projectObjects'
 import { Sidenav } from '../UI/sideNav/SideNav';
  
   export default class Main extends React.PureComponent{
@@ -10,7 +9,7 @@ import { Sidenav } from '../UI/sideNav/SideNav';
 
 
       return(
-        <div>
+        <div className="sideNavParent">
          <Sidenav></Sidenav>
         </div>
     )
