@@ -33,7 +33,7 @@ render(){
         <div>
         <Navbar color="light" light expand="md">
              <div>
-              <a className="About" href="/about">About</a>
+              <a className="About" href="/">Work</a>
               </div>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
@@ -43,7 +43,7 @@ render(){
                 <NavLink className="navLine" href="/projects">Archive</NavLink>
                </NavItem>
                 <NavItem>
-                <NavLink className="navLine" href="/">Work</NavLink>
+                <NavLink className="navLine" href="/about">About</NavLink>
                 </NavItem>
             </Nav>
           </Collapse>

@@ -25,7 +25,8 @@ const activeProject = {...event, active: !checkActive}
           <div className="sidenav">
          {items.map((project) => {
            return ( <div className="Box" key={project.id}>
-              <p onClick={() => {this.showProjectOnClick(project)}}><b>Project name: </b>{project.title}</p>
+              <p className={this.state.isToggleOn && this.state.activeProject.id === project.id ? 'P_Color' : null}
+                 onClick={() => {this.showProjectOnClick(project)}}><b>Project name: </b>{project.title}</p>
                 {
                 this.state.isToggleOn && this.state.activeProject.id === project.id 
                 ? 

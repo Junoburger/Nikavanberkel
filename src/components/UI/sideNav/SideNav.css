@@ -38,23 +38,31 @@
     font-size: 18px;
   }
 }
-.ProjectImageBox{
-  display: flex;
 
+.ProjectImageBox {
+  display: flex;
+  flex-direction: column;
 }
 
-.ProjectImage{
-  width:200px;
+.ProjectImage {
+  width: 200px;
   height: 200px;
   border-radius: 5px;
 }
 
-.imageBox{
+.imageBox {
   /* display: flex; */
-  
-}
-.Box{
-  display:flex;
-  flex-direction: row;
 
+}
+
+.Box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+
+.P_Color{
+  color: #0080ff;
+  font-size:1.5rem;
 }
