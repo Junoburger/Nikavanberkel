@@ -1,8 +1,8 @@
 import React from 'react'
 import './Main.css'
 import { Sidenav } from '../UI/sideNav/SideNav';
- 
-  export default class Main extends React.PureComponent{
+ import { ProjectList } from './../UI/ProjectInfo/ProjectList/ProjectList';
+ export default class Main extends React.PureComponent{
 
   
       render() {
@@ -10,7 +10,8 @@ import { Sidenav } from '../UI/sideNav/SideNav';
 
       return(
         <div className="sideNavParent">
-         <Sidenav></Sidenav>
+        {/* <ProjectList/> */}
+         <Sidenav/>
         </div>
     )
       }

@@ -1,0 +1,13 @@
+.ProjectName{
+    background:none;
+    border:none;    
+}
+
+.ProjectList{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav{
+    
+}
