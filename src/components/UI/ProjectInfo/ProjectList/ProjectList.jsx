@@ -6,43 +6,46 @@ import './ProjectList.css'
 
 
 export class ProjectList extends React.PureComponent {
-    
-      constructor () {
-        super()
-        this.state = {
-          isHidden: true,
-          items: items 
-        }
-      }
-    toggleHidden () {
-      this.setState({
-        isHidden: !this.state.isHidden
-      })
-    }
-    render () {
- const { items }  = this.state
-      return (
-        <div className="sidenav">
-        <div> 
-            <div className="ProjectList">
-            {
-              items.map(project => {
-                return (
-                  <div key={project.id}>
-                    <button className="ProjectName" onClick={this.toggleHidden.bind(this)} >
-                        {project.title}
-                    </button>
-                    </div>
-                )
-              })
-            }
-
-          {!this.state.isHidden && <div><Child/></div>}
-        </div>
-       </div>
-
-       </div>
-
-      )
-    }
+  constructor() {
+    super();
+    this.state = {
+      items: items,
+      selectedItem: null
+    };
   }
+  
+  renderList = () => {
+    return this.state.items.map(i =>{
+      return ( 
+      <div>
+            <p key={i.id} onClick={() => this.selectImage(i)}><strong>{i.title}</strong>
+            <br/>{i.description}</p>
+    </div>
+            )         
+    })
+  }
+
+  selectImage(i){
+    this.setState({selectedItem : i.src});
+  }
+
+  renderImage = () => {
+    return this.state.selectedItem;
+  }
+
+  render() {
+   const keys = Object.keys(this.state.items)
+    console.log(keys)
+    return (
+      <div className="container">
+        <div key={keys} className="item-list">
+          {this.renderList()}
+        </div>
+        <div className="Imagebox">
+        <img className="Image" src={this.state.selectedItem} alt={this.state.selectedItem}/>
+        {/* {this.renderImage()} */}
+        </div>
+      </div>
+    );
+  }
+}

@@ -11,3 +11,28 @@
 .sidenav{
     
 }
+
+h1, p {
+    font-family: Lato;
+  }
+  
+  p:hover{
+    cursor: pointer;
+    
+  }
+  
+  .container{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Imagebox{
+    /* position: relative; */
+    /* top: 0;
+    right: 40px; */
+  }
+
+  .Image{
+      width: 400px;
+      height: 400px;
+  }

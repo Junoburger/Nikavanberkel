@@ -40,7 +40,8 @@ export class Sidenav extends Component {
                 <b>Project name: </b>
                 {project.title}
               </p>
-              {this.state.isToggleOn && this.state.activeProject.id === project.id ? <p>hallo</p> : ""}
+              {this.state.isToggleOn && this.state.activeProject.id === project.id ?
+               <img className="ProjectImage" src={project.src} alt={project.altText}/>: ""}
             </div>
           );
         })}

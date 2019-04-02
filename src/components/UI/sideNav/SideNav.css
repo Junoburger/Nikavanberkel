@@ -45,6 +45,10 @@
 }
 
 .ProjectImage {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  /* the propreties below you can customize */
   width: 200px;
   height: 200px;
   border-radius: 5px;

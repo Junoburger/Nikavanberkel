@@ -9,9 +9,9 @@ import { Sidenav } from '../UI/sideNav/SideNav';
 
 
       return(
-        <div className="sideNavParent">
-        {/* <ProjectList/> */}
-         <Sidenav/>
+        <div className="">
+        <ProjectList/>
+         {/* <Sidenav/> */}
         </div>
     )
       }
