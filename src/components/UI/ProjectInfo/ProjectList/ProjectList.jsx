@@ -17,8 +17,8 @@ export class ProjectList extends React.PureComponent {
   renderList = () => {
     return this.state.items.map(i =>{
       return ( 
-      <div>
-            <p key={i.id} onClick={() => this.selectImage(i)}><strong>{i.title}</strong>
+      <div key={i.id}>
+            <p  onClick={() => this.selectImage(i)}><strong>{i.title}</strong>
             <br/>{i.description}</p>
     </div>
             )         
@@ -34,11 +34,10 @@ export class ProjectList extends React.PureComponent {
   }
 
   render() {
-   const keys = Object.keys(this.state.items)
-    console.log(keys)
+ 
     return (
       <div className="container">
-        <div key={keys} className="item-list">
+        <div className="item-list">
           {this.renderList()}
         </div>
         <div className="Imagebox">
