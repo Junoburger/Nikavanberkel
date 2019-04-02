@@ -26,7 +26,7 @@ export class ProjectList extends React.PureComponent {
   }
 
   selectImage(i){
-    this.setState({selectedItem : i.src});
+    this.setState({selectedItem : i});
   }
 
   renderImage = () => {
@@ -34,15 +34,18 @@ export class ProjectList extends React.PureComponent {
   }
 
   render() {
- 
+
     return (
       <div className="container">
         <div className="item-list">
           {this.renderList()}
         </div>
         <div className="Imagebox">
-        <img className="Image" src={this.state.selectedItem} alt={this.state.selectedItem}/>
-        {/* {this.renderImage()} */}
+        
+        {this.state.selectedItem != null && 
+        <img className="Image" src={this.state.selectedItem.src} alt={this.state.selectedItem}/>
+        }
+        
         </div>
       </div>
     );
