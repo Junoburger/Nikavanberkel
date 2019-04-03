@@ -16,7 +16,8 @@
   }
 
 .Typed{
-  font-size: 16pt;
+  font-size: 12pt;
+  color:grey;
 }
 
 @media only screen and (max-width: 600px) { 

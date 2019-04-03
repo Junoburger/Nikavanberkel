@@ -9,7 +9,7 @@ import {
 
 import './Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Route } from 'react-router-dom';
+
 import { Welcome } from './../Main/Welcome';
 
 
@@ -33,11 +33,11 @@ render(){
         <div>
         <Navbar color="light" light expand="md">
              <div>
-              <a className="About" href="/">Work</a>
+              <a className="About" href="/"><Welcome/></a>
               </div>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
-                <Route exact path="/"  component={Welcome}></Route>  
+                
                 <Nav className="ml-auto" navbar>
                 <NavItem>
                 <NavLink className="navLine" href="/projects">Archive</NavLink>

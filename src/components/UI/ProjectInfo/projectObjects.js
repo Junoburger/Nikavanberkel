@@ -11,6 +11,8 @@ import {
 // const size = Math.ceil(Math.random() * 1000);
 
 
+
+
 export const items = [{
     id: 1,
     src: image1,

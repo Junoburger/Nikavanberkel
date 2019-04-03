@@ -7,7 +7,7 @@ return (
     <div className="container ">
     <div>            
         <Typed className="Typed"
-               strings={['']} 
+               strings={['Work']} 
                typeSpeed={75} 
            />
    </div>
@@ -15,3 +15,4 @@ return (
    </div>
 );
 }
+

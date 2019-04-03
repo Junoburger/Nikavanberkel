@@ -23,13 +23,13 @@ h1, p {
   
   .container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     border:none;
     margin:10px;
   }
 
   .Imagebox{
-   
+   display: flex;
   }
 
   .Image{
@@ -38,3 +38,5 @@ h1, p {
       border:none;
       border-radius: 5px;
   }
+
+ 
