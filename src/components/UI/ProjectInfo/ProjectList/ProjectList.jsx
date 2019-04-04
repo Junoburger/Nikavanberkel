@@ -9,10 +9,9 @@ export class ProjectList extends React.PureComponent {
     super();
     this.state = {
       items: items,
-      selectedItem: null
+      selectedItem: null,
     };
   }
-  
   
   renderList = () => {
     return this.state.items.map(i =>{
@@ -34,6 +33,7 @@ export class ProjectList extends React.PureComponent {
 
   render() {
    
+ 
     return (
       <div className="container">
         <div className="item-list">
@@ -41,12 +41,19 @@ export class ProjectList extends React.PureComponent {
         </div>
         <div className="Imagebox">
         {
- 
          this.state.selectedItem != null  &&
-        
-        <img className="Image" src={this.state.selectedItem.src} alt={this.state.selectedItem}/>
-        }
+         this.state.selectedItem.src.map(image => {
+      return (
+         <div key={image} className="ImageBox">
+      <img src={image} alt="" className="Image" />
+        {/* <p>{this.state.selectedItem.description }</p> */}
         </div>
+      )
+   })
+   
+       
+        }
+        </div>  
       </div>
     );
   }
