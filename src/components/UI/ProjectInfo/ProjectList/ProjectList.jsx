@@ -1,5 +1,4 @@
 import React from 'react';
-import {Child} from './Child'
 import { items } from "../projectObjects";
 import './ProjectList.css'
 
@@ -10,7 +9,7 @@ export class ProjectList extends React.PureComponent {
     super();
     this.state = {
       items: items,
-      selectedItem: null
+      selectedItem: null,
     };
   }
   
@@ -18,8 +17,7 @@ export class ProjectList extends React.PureComponent {
     return this.state.items.map(i =>{
       return ( 
       <div key={i.id}>
-            <p  onClick={() => this.selectImage(i)}><strong>{i.title}</strong>
-            <br/>{i.description}</p>
+            <p  onClick={() => this.selectImage(i)}><strong>{i.title}</strong></p>
     </div>
             )         
     })
@@ -34,19 +32,28 @@ export class ProjectList extends React.PureComponent {
   }
 
   render() {
-
+   
+ 
     return (
       <div className="container">
         <div className="item-list">
           {this.renderList()}
         </div>
         <div className="Imagebox">
-        
-        {this.state.selectedItem != null && 
-        <img className="Image" src={this.state.selectedItem.src} alt={this.state.selectedItem}/>
-        }
-        
+        {
+         this.state.selectedItem != null  &&
+         this.state.selectedItem.src.map(image => {
+      return (
+         <div key={image} className="ImageBox">
+      <img src={image} alt="" className="Image" />
+        {/* <p>{this.state.selectedItem.description }</p> */}
         </div>
+      )
+   })
+   
+       
+        }
+        </div>  
       </div>
     );
   }
