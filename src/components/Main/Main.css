@@ -1,40 +1,43 @@
-.node circle {
-    cursor: pointer;
-    fill: #fff;
-    stroke: steelblue;
-    stroke-width: 1.5px;
-  }
-  
-  .node text {
-    font-size: 11px;
-  }
-  
-  path.link {
-    fill: none;
-    stroke: #ccc;
-    stroke-width: 1.5px;
-  }
-
-.Typed{
-  font-size: 12pt;
-  color:grey;
+p {
+  text-align: center;
 }
-
-@media only screen and (max-width: 600px) { 
-
-.Typed{
-  display: none;
-}
-
-}
-
-img{
-  max-width: 100vw;
-  max-height: 100vh;
-}
-
-.sideNavParent{
+.Grid {
+  margin:10px;
   display: flex;
-  justify-content: flex-start;
-  margin-left: 150px;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+.Grid img{
+  flex-shrink: 0;
+  max-width: 100%;
+
+}
+.Grid-item {
+  width: 100%;
+  background: none;
+  margin-top: 2%;
+}
+@media (min-width: 48rem) {
+  .Grid-item {
+    width: 49%;
+  }
+  .Grid-item:nth-child(odd) {
+    background: none;
+    margin-right: 2%;
+  }
+}
+@media (min-width: 62rem) {
+  .Grid-item {
+    width: 23.5%;
+  }
+  .Grid-item:not(:nth-child(4n)) {
+    background: none;
+    margin-right: 2%;
+  }
+}
+.Grid-item:before {
+  content: "";
+  float: left;
+  padding-top: 100%;
 }

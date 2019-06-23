@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {
   Collapse,
-  Navbar,
   NavbarToggler,
   Nav,
   NavItem,
@@ -10,7 +9,6 @@ import {
 import './Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Welcome } from './../Main/Welcome';
 
 
 export class Header extends Component{
@@ -31,23 +29,22 @@ render(){
     return(
 
         <div>
-        <Navbar color="light" light expand="md">
+        <nav className="navbar navbar-expand-md navbar-light">
              <div>
-              <a className="About" href="/"><Welcome/></a>
+              <a href="/">
+              <h4 className="Name" >Nika Van Berkel</h4>
+              </a>
               </div>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                 
                 <Nav className="ml-auto" navbar>
                 <NavItem>
-                <NavLink className="navLine" href="/projects">Archive</NavLink>
-               </NavItem>
-                <NavItem>
-                <NavLink className="navLine" href="/about">About</NavLink>
+                <NavLink className="About" href="/about">About</NavLink>
                 </NavItem>
             </Nav>
           </Collapse>
-        </Navbar>
+        </nav>
       </div>
     );
 }

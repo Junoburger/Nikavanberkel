@@ -1,23 +1,16 @@
-a:hover{
-    /* text-decoration: none !important; */
-}
 Link{
     text-decoration: none;
 }
 
-.navLine{
-
+a {
+    text-decoration: none !important;
 }
-.navLine:active{
-    /* text-decoration-line: line-through !important; */
-
+.Name{
+    color:black;
 }
+
 
 .About{
-    text-decoration: none;
-    color: grey;
+    color: black !important;
 }
-.About:hover{
-    color: black;
-    text-decoration: none;
-}
+
