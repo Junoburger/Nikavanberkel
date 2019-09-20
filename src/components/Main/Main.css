@@ -11,10 +11,12 @@ p {
 .Grid img{
   flex-shrink: 0;
   max-width: 100%;
+  min-height: 400px;
 
 }
 .Grid-item {
   width: 100%;
+  height
   background: none;
   margin-top: 2%;
 }
