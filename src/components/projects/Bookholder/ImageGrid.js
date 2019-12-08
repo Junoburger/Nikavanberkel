@@ -15,7 +15,7 @@ export const ImageGrid = () => {
       <ImageWrapper>
         {images.map(({ id, src, alt }) => (
           <img
-            style={{ maxWidth: "400px", maxHeight: "400px", padding: "5px" }}
+            style={{ width: "400px", maxHeight: "400px", padding: "5px" }}
             key={id}
             src={src}
             alt={alt}
