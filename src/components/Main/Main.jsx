@@ -1,30 +1,33 @@
-import React from 'react'
-import './Main.css'
- import examplePic from '../../assets/images/ALB_view 1.jpg'
- import examplePic1 from '../../assets/images/ALB_view 2.jpg'
- import examplePic2 from '../../assets/images/ALB_view 3.jpg'
- import examplePic3 from '../../assets/images/ALB_plans_171219_b&w.jpg'
+import React, { useState, useEffect } from "react";
+import { projectsLoader } from "../../assets/projects/projects";
+import { ListItem } from "../../styled_components/ListItem";
+import { NavLink } from "react-router-dom";
+import "./Main.css";
 
+export const Main = props => {
+  const [projects, projectsSet] = useState([]);
 
+  useEffect(() => {
+    const projects = projectsLoader();
+    projectsSet(projects);
+  }, []);
 
- export default class Main extends React.PureComponent{
-
-  
-      render() {
-
-
-      return(
-        <div>
-<div class="Grid">
-  <div class="Grid-item"><img  src={examplePic}/></div>
-  <div class="Grid-item"><img  src={examplePic2}/></div>
-  <div class="Grid-item"><img  src={examplePic3}/></div>
-  <div class="Grid-item"><img  src={examplePic1}/></div>
-  <div class="Grid-item"><img  src={examplePic}/></div>
-  <div class="Grid-item"><img  src={examplePic2}/></div>
-
-</div>
-        </div>
-    )
-      }
-}
+  return (
+    <>
+      <ul>
+        {projects.map(({ id, title, route }) => (
+          <ListItem key={id}>
+            <NavLink
+              activeClassName="active"
+              className="Nav_link"
+              exact={true}
+              to={`/${route}`}
+            >
+              {title}
+            </NavLink>
+          </ListItem>
+        ))}
+      </ul>
+    </>
+  );
+};

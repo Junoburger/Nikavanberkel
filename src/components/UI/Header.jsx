@@ -1,17 +1,10 @@
-import React, {Component} from 'react';
-import {
-  Collapse,
-  NavbarToggler,
-  Nav,
-  NavItem,
-  NavLink} from 'reactstrap';
+import React, { Component } from "react";
+import { Collapse, NavbarToggler, Nav, NavItem, NavLink } from "reactstrap";
 
-import './Header.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./Header.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-
-
-export class Header extends Component{
+export class Header extends Component {
   constructor(props) {
     super(props);
 
@@ -25,28 +18,27 @@ export class Header extends Component{
       isOpen: !this.state.isOpen
     });
   }
-render(){
-    return(
-
-        <div>
+  render() {
+    return (
+      <div>
         <nav className="navbar navbar-expand-md navbar-light">
-             <div>
-              <a href="/">
-              <h4 className="Name" >Nika Van Berkel</h4>
-              </a>
-              </div>
-                <NavbarToggler onClick={this.toggle} />
-                <Collapse isOpen={this.state.isOpen} navbar>
-                
-                <Nav className="ml-auto" navbar>
-                <NavItem>
-                <NavLink className="About" href="/about">About</NavLink>
-                </NavItem>
+          <div>
+            <a href="/">
+              <h4 className="Name">Nika Van Berkel</h4>
+            </a>
+          </div>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink className="About" href="/about">
+                  About
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </nav>
       </div>
     );
-}
-
+  }
 }
