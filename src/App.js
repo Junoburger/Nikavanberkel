@@ -12,12 +12,10 @@ const App = () => {
     <Router>
       <div className="App">
         <Header></Header>
-        <div style={{ display: "flex" }}>
-          <Route path="/" component={Main} />
-          <Route exact path="/about" component={Bio} />
-          <Route exact path="/albania" component={Albania} />
-          <Route exact path="/bookholder" component={Bookholder} />
-        </div>
+        <Route exact path="/" component={Main} />
+        <Route exact path="/about" component={Bio} />
+        <Route exact path="/albania" component={Albania} />
+        <Route exact path="/bookholder" component={Bookholder} />
       </div>
     </Router>
   );

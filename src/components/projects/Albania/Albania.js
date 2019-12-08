@@ -5,7 +5,6 @@ import { ProjectWrapper } from "../../../styled_components/ProjectWrapper";
 export const Albania = () => {
   return (
     <>
-      {/* paragraph should be component */}
       <ProjectWrapper>
         <ImageGrid />
         <p>
