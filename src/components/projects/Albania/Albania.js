@@ -7,6 +7,7 @@ export const Albania = () => {
     <>
       {/* paragraph should be component */}
       <ProjectWrapper>
+        <ImageGrid />
         <p>
           <strong>From Albania with love</strong>
           <br />
@@ -32,7 +33,6 @@ export const Albania = () => {
             Berkel
           </strong>
         </p>
-        <ImageGrid />
       </ProjectWrapper>
     </>
   );

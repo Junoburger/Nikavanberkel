@@ -6,6 +6,7 @@ export const Bookholder = () => {
   return (
     <>
       <ProjectWrapper>
+        <ImageGrid />
         <p>
           <strong>Bookholder</strong>
           <br />
@@ -22,7 +23,6 @@ export const Bookholder = () => {
           <br />
           <strong>Photography: Maryam Benzebiba</strong>
         </p>
-        <ImageGrid />
       </ProjectWrapper>
     </>
   );
