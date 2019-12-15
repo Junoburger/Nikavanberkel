@@ -17,11 +17,11 @@ export const Bookholder = () => {
           <br />
           <br />
           <br />
-          <strong>2018 / Rotterdam</strong>
+          <p>2018 / Rotterdam</p>
           <br />
           <br />
           <br />
-          <strong>Photography: Maryam Benzebiba</strong>
+          <p>Photography: Maryam Benzebiba</p>
         </p>
       </ProjectWrapper>
     </>

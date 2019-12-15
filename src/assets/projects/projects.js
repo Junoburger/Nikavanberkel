@@ -1,4 +1,4 @@
-import img1 from "./Albania/7.jpg";
+import img11 from "./Albania/front.jpg";
 import img2 from "./Bookholder/front.jpg";
 import img3 from "./Posy/front.jpg";
 import img4 from "./Space for one/front.jpg";
@@ -8,7 +8,7 @@ const projects = [
   {
     id: 1,
     title: "Albania",
-    src: img1,
+    src: img11,
     route: "albania"
   },
   {

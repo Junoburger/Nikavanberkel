@@ -7,7 +7,6 @@ import img7 from "./7.jpg";
 import img8 from "./8.jpg";
 import img9 from "./9.jpg";
 import img10 from "./10.jpg";
-import img11 from "./front.jpg";
 
 const images = [
   {
@@ -53,11 +52,6 @@ const images = [
   {
     id: 10,
     src: img10,
-    alt: "foto 10 Space for one"
-  },
-  {
-    id: 11,
-    src: img11,
     alt: "foto 10 Space for one"
   }
 ];

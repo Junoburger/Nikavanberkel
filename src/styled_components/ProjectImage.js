@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectImage = styled.img`
-  max-width: 12.5rem;
-  max-height: 12.5rem;
+  max-width: 15rem;
+  max-height: 15rem;
   margin: 3rem;
 `;

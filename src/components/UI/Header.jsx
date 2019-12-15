@@ -24,7 +24,7 @@ export class Header extends Component {
         <nav className="navbar navbar-expand-md navbar-light">
           <div>
             <a href="/">
-              <h4 className="Name">Nika Van Berkel</h4>
+              <div className="Name">Nika van Berkel</div>
             </a>
           </div>
           <NavbarToggler onClick={this.toggle} />
