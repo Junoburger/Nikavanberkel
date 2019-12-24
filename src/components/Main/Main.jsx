@@ -7,13 +7,22 @@ import { NavWrapper } from "../../styled_components/NavWrapper";
 import { NavLink } from "react-router-dom";
 import "./Main.css";
 
-export const Main = props => {
+export const Main = () => {
   const [projects, projectsSet] = useState([]);
+  const [name, setName] = useState(false);
 
   useEffect(() => {
     const projects = projectsLoader();
     projectsSet(projects);
   }, []);
+
+  const onMouseEnter = () => {
+    setName(true);
+  };
+
+  const onMouseOut = () => {
+    setName(false);
+  };
 
   return (
     <>
@@ -26,7 +35,13 @@ export const Main = props => {
               exact={true}
               to={`/${route}`}
             >
-              <ProjectImage src={src} alt={title} />
+              <ProjectImage
+                src={src}
+                alt={title}
+                onMouseEnter={onMouseEnter}
+                onMouseOut={onMouseOut}
+              />
+              {name && <p>{title}</p>}
             </NavLink>
           </ImageWrapper>
         ))}
