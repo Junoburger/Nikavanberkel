@@ -9,25 +9,25 @@ import "./Main.css";
 
 export const Main = () => {
   const [projects, projectsSet] = useState([]);
-  const [name, setName] = useState(false);
-  const [projectId, setProjectId] = useState();
+  // const [name, setName] = useState(false);
+  // const [projectId, setProjectId] = useState();
 
   useEffect(() => {
     const projects = projectsLoader();
     projectsSet(projects);
   }, []);
 
-  projects.map(project => {
-    // setProjectId(project.id);
-  });
+  // projects.map(project => {
+  //   // setProjectId(project.id);
+  // });
 
-  const onMouseEnter = () => {
-    setName(true);
-  };
+  // const onMouseEnter = () => {
+  //   setName(true);
+  // };
 
-  const onMouseOut = () => {
-    setName(false);
-  };
+  // const onMouseOut = () => {
+  //   setName(false);
+  // };
 
   return (
     <>
@@ -40,12 +40,7 @@ export const Main = () => {
               exact={true}
               to={`/${route}`}
             >
-              <ProjectImage
-                src={src}
-                alt={title}
-                onMouseEnter={() => {}}
-                onMouseOut={onMouseOut}
-              />
+              <ProjectImage src={src} alt={title} onMouseEnter={() => {}} />
               {/* {id} */}
               {/* {name && <p>{title}</p>} */}
             </NavLink>
