@@ -10,11 +10,16 @@ import "./Main.css";
 export const Main = () => {
   const [projects, projectsSet] = useState([]);
   const [name, setName] = useState(false);
+  const [projectId, setProjectId] = useState();
 
   useEffect(() => {
     const projects = projectsLoader();
     projectsSet(projects);
   }, []);
+
+  projects.map(project => {
+    // setProjectId(project.id);
+  });
 
   const onMouseEnter = () => {
     setName(true);
@@ -38,10 +43,11 @@ export const Main = () => {
               <ProjectImage
                 src={src}
                 alt={title}
-                onMouseEnter={onMouseEnter}
+                onMouseEnter={() => {}}
                 onMouseOut={onMouseOut}
               />
-              {name && <p>{title}</p>}
+              {/* {id} */}
+              {/* {name && <p>{title}</p>} */}
             </NavLink>
           </ImageWrapper>
         ))}

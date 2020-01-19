@@ -1,12 +1,33 @@
-import React from "react";
-import { ImageGrid } from "./ImageGrid";
-import { ProjectWrapper } from "../../../styled_components/ProjectWrapper";
+import React, { useState, useEffect } from "react";
+import { imageLoader } from "../../../assets/projects/Posy/images";
+import { Paragraph } from "../../../styled_components/Paragraph";
+import { Image } from "../../../styled_components/Image";
+import Slider from "react-slick";
 
 export const Posy = () => {
+  const [images, imagesSet] = useState([]);
+
+  useEffect(() => {
+    const images = imageLoader();
+    imagesSet(images);
+  }, []);
+
+  let settings = {
+    arrows: true,
+    dots: true,
+    infinite: false,
+    autoplay: true,
+    speed: 1000
+  };
+
   return (
     <>
-      <ProjectWrapper>
-        <ImageGrid />
+      <Slider {...settings}>
+        {images.map(({ id, src, alt }) => (
+          <Image key={id} src={src} alt={alt} />
+        ))}
+      </Slider>
+      <Paragraph>
         <p>
           <strong>Posy</strong>
           <br />
@@ -22,7 +43,7 @@ export const Posy = () => {
           <br />
           <strong>Photo: Maryam Benzebiba</strong>
         </p>
-      </ProjectWrapper>
+      </Paragraph>
     </>
   );
 };

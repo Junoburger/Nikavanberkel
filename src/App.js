@@ -8,7 +8,12 @@ import { Bookholder } from "./components/projects/Bookholder/Bookholder";
 import { Posy } from "./components/projects/Posy/Posy";
 import { SpaceForOne } from "./components/projects/Space for one/SpaceForOne";
 import { TwoDimensionalVase } from "./components/projects/Two dimensional vase/TwoDimensionalVase";
+//STYLING
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./master.css";
 import "./App.css";
+//STYLING
 
 const App = () => {
   return (

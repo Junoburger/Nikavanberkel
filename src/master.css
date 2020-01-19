@@ -1,0 +1,14 @@
+.slick-prev {
+  z-index: 999 !important;
+  left: 0 !important;
+}
+
+.slick-next {
+  z-index: 999 !important;
+  right: 0 !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}

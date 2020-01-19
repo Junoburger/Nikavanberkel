@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Image = styled.img`
-  width: 450px;
-  max-height: 400px;
-  padding: 5px;
+  /* width: 450px; */
+  height: 650px;
+  object-fit: contain;
 `;
