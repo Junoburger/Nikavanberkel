@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Image } from "../../../styled_components/Image";
 import { imageLoader } from "../../../assets/projects/Albania/images";
-import { ProjectWrapper } from "../../../styled_components/ProjectWrapper";
 import { Paragraph } from "../../../styled_components/Paragraph";
 import Slider from "react-slick";
 
