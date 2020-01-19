@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Collapse, NavbarToggler, Nav, NavItem, NavLink } from "reactstrap";
-
 import "./Header.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
