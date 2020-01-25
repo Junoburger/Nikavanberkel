@@ -27,13 +27,13 @@ const projects = [
     id: 4,
     title: "Space for one",
     src: img4,
-    route: "space-for-one"
+    route: "spaceforone"
   },
   {
     id: 5,
     title: "Two dimensional vase",
     src: img5,
-    route: "two-dimensional-vase"
+    route: "twodimensionalvase"
   }
 ];
 
