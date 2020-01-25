@@ -19,6 +19,7 @@ export const SpaceForOne = () => {
     autoplay: true,
     speed: 1000
   };
+
   return (
     <>
       <Slider {...settings}>

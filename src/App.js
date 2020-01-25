@@ -25,7 +25,7 @@ const App = () => {
         <Route exact path="/albania" component={Albania} />
         <Route exact path="/bookholder" component={Bookholder} />
         <Route exact path="/posy" component={Posy} />
-        <Route exact path="/space-for-one" component={SpaceForOne} />
+        <Route exact path="/spaceforone" component={SpaceForOne} />
         <Route
           exact
           path="/two-dimensional-vase"
