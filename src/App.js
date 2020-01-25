@@ -28,7 +28,7 @@ const App = () => {
         <Route exact path="/spaceforone" component={SpaceForOne} />
         <Route
           exact
-          path="/two-dimensional-vase"
+          path="/twodimensionalvase"
           component={TwoDimensionalVase}
         />
       </div>
