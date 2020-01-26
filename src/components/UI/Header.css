@@ -1,16 +1,16 @@
-Link{
-    text-decoration: none;
+link {
+  text-decoration: none;
 }
 
 a {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
-.Name{
-    color:black;
-}
-
-
-.About{
-    color: black !important;
+.Name {
+  font-size: 10pt;
+  color: black;
 }
 
+.About {
+  font-size: 10pt;
+  color: black !important;
+}

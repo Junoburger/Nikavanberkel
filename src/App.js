@@ -13,12 +13,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./master.css";
 import "./App.css";
+
 //STYLING
 
 const App = () => {
   return (
     <Router>
-      <div className="App">
+      <>
         <Header></Header>
         <Route exact path="/" component={Main} />
         <Route exact path="/about" component={Bio} />
@@ -31,7 +32,7 @@ const App = () => {
           path="/twodimensionalvase"
           component={TwoDimensionalVase}
         />
-      </div>
+      </>
     </Router>
   );
 };

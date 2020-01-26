@@ -15,7 +15,7 @@ export const TwoDimensionalVase = () => {
   let settings = {
     arrows: true,
     dots: true,
-    infinite: false,
+    infinite: true,
     autoplay: true,
     speed: 1000
   };

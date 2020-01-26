@@ -1,14 +1,17 @@
 .slick-prev {
   z-index: 999 !important;
-  left: 0 !important;
+  margin-left: 98% !important;
 }
-
+.slick-prev:before {
+  color: black !important;
+  content: "<";
+}
 .slick-next {
   z-index: 999 !important;
   right: 0 !important;
 }
 
-.slick-prev:before,
 .slick-next:before {
   color: black !important;
+  content: ">";
 }
