@@ -15,16 +15,11 @@ export const Albania = () => {
 
   function PrevArr(props) {
     const { className, onClick } = props;
-    return (
-      <>
-        <Arrow leftArrow className={className} onClick={onClick} />
-      </>
-    );
+    return <Arrow leftArrow className={className} onClick={onClick} />;
   }
 
   function NextArr(props) {
     const { className, onClick } = props;
-    console.log(props);
     return <Arrow className={className} onClick={onClick} />;
   }
 
