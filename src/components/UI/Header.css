@@ -7,10 +7,12 @@ a {
 }
 .Name {
   font-size: 10pt;
+  font-weight: lighter;
   color: black;
 }
 
 .About {
   font-size: 10pt;
+  font-weight: lighter;
   color: black !important;
 }

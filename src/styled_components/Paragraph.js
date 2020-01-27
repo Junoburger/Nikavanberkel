@@ -26,5 +26,5 @@ export const Text = styled.div`
 export const Arrow = styled.div`
   position: relative;
   margin-left: ${props => (props.leftArrow ? "90%" : "")};
-  margin-top: 25%;
+  margin-top: 20%;
 `;

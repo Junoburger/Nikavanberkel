@@ -40,10 +40,16 @@ export const Albania = () => {
   const next = () => {
     nextEl.current.slickNext();
   };
-
+  const styler = {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    marginTop: "5%",
+    cursor: "pointer"
+  };
   return (
     <React.Fragment>
-      <Slider style={{ cursor: "pointer" }} ref={nextEl} {...settings}>
+      <Slider style={styler} ref={nextEl} {...settings}>
         {images.map(({ id, src, alt, text }, index) =>
           text === null ? (
             <Image
