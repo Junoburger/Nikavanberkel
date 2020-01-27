@@ -13,27 +13,27 @@ const projects = [
   },
   {
     id: 2,
-    title: "Bookholder",
-    src: img2,
-    route: "bookholder"
-  },
-  {
-    id: 3,
     title: "Posy",
     src: img3,
     route: "posy"
   },
   {
-    id: 4,
-    title: "Space for one",
-    src: img4,
-    route: "spaceforone"
+    id: 3,
+    title: "Bookholder",
+    src: img2,
+    route: "bookholder"
   },
   {
-    id: 5,
+    id: 4,
     title: "Two dimensional vase",
     src: img5,
     route: "twodimensionalvase"
+  },
+  {
+    id: 5,
+    title: "Space for one",
+    src: img4,
+    route: "spaceforone"
   }
 ];
 

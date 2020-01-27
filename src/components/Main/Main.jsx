@@ -3,10 +3,10 @@ import { projectsLoader } from "../../assets/projects/projects";
 import {
   ProjectImage,
   Title,
-  ProjectWrapper
+  ProjectWrapper,
+  ImageWrapper,
+  NavWrapper
 } from "../../styled_components/ProjectImage";
-import { ImageWrapper } from "../../styled_components/ImageWrapper";
-import { NavWrapper } from "../../styled_components/NavWrapper";
 
 import { NavLink } from "react-router-dom";
 import "./Main.css";
