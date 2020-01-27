@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Paragraph = styled.div`
-  padding: 10% 30%;
+  padding: 5% 30%;
 `;
 
 export const Header = styled.div`
