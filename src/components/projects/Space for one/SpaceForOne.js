@@ -1,61 +1,69 @@
-import React, { useState, useEffect } from "react";
-import { imageLoader } from "../../../assets/projects/Space for one/images";
-import { Image } from "../../../styled_components/Image";
-
+import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
-import { Paragraph } from "../../../styled_components/Paragraph";
+
+import { Arrow, Text, ProjectName } from "../../../styled_components/Paragraph";
+import { Image } from "../../../styled_components/Image";
+import { imageLoader } from "../../../assets/projects/Space for one/images";
 
 export const SpaceForOne = () => {
   const [images, imagesSet] = useState([]);
+  const nextEl = useRef(null);
+
   useEffect(() => {
     const images = imageLoader();
     imagesSet(images);
   }, []);
 
+  function PrevArr(props) {
+    const { className, onClick } = props;
+    return <Arrow leftArrow className={className} onClick={onClick} />;
+  }
+
+  function NextArr(props) {
+    const { className, onClick } = props;
+    return <Arrow className={className} onClick={onClick} />;
+  }
+
   let settings = {
     arrows: true,
-    dots: true,
+    prevArrow: <PrevArr />,
+    nextArrow: <NextArr />,
+    speed: 500,
     infinite: true,
-    autoplay: true,
-    speed: 1000
+    fade: true
+  };
+
+  const next = () => {
+    nextEl.current.slickNext();
+  };
+
+  const styler = {
+    display: "block",
+    margin: "0 auto",
+    cursor: "pointer"
   };
 
   return (
     <>
-      <Slider {...settings}>
-        {images.map(({ id, src, alt }) => (
-          <Image key={id} src={src} alt={alt} />
-        ))}
+      <Slider style={styler} ref={nextEl} {...settings}>
+        {images.map(({ id, src, alt, text }, index) => {
+          return text === null ? (
+            <React.Fragment key={id}>
+              <Image src={src} alt={alt} />
+              <ProjectName>Space for one</ProjectName>
+            </React.Fragment>
+          ) : (
+            <Text
+              onClick={() => {
+                next();
+              }}
+              key={index}
+            >
+              {text()}
+            </Text>
+          );
+        })}
       </Slider>
-      <Paragraph>
-        <strong>Space for One</strong>
-        <br />
-        <br />
-        <br />
-        This is an interior design of a small apartment for one person. The
-        question was how to live generously even when the size of the space
-        itself is not. There are only a few decisive pieces of furniture
-        populating the apartment, seeking a relation between openness and
-        privacy.
-        <br />
-        <br />
-        The dialog between formal rigour and childish fascination is reflected
-        in the simple yet playful geometry of the design. Neutral colours, soft
-        materials and openness resonate with inhabitants character trough the
-        space.
-        <br />
-        <br />
-        <strong>
-          2019 / interior design / 44 m2 / Ljubljana / Private client
-        </strong>
-        <br />
-        <br />
-        <br />
-        <strong>Authors: Ada Finci Terseglav, Nika van Berkel</strong>
-        <br />
-        <br />
-        <strong>Photo: Klemen Ilovar</strong>
-      </Paragraph>
     </>
   );
 };

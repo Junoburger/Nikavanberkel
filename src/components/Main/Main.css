@@ -8,10 +8,6 @@
   color: rgb(0, 0, 0);
 }
 
-.Nav_link:active {
-  font-weight: 600;
-}
-
 .active {
   font-weight: 600;
 }

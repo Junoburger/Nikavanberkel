@@ -24,7 +24,12 @@ export const Text = styled.div`
 `;
 
 export const Arrow = styled.div`
-  position: relative;
+  position: fixed;
   margin-left: ${props => (props.leftArrow ? "90%" : "")};
-  margin-top: 20%;
+  margin-top: 23rem;
+`;
+
+export const ProjectName = styled.div`
+  text-align: center;
+  padding: 5%;
 `;

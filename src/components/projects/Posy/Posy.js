@@ -1,49 +1,69 @@
-import React, { useState, useEffect } from "react";
-import { imageLoader } from "../../../assets/projects/Posy/images";
-import { Paragraph } from "../../../styled_components/Paragraph";
-import { Image } from "../../../styled_components/Image";
+import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
+
+import { Arrow, Text, ProjectName } from "../../../styled_components/Paragraph";
+import { Image } from "../../../styled_components/Image";
+import { imageLoader } from "../../../assets/projects/Posy/images";
 
 export const Posy = () => {
   const [images, imagesSet] = useState([]);
+  const nextEl = useRef(null);
 
   useEffect(() => {
     const images = imageLoader();
     imagesSet(images);
   }, []);
 
+  function PrevArr(props) {
+    const { className, onClick } = props;
+    return <Arrow leftArrow className={className} onClick={onClick} />;
+  }
+
+  function NextArr(props) {
+    const { className, onClick } = props;
+    return <Arrow className={className} onClick={onClick} />;
+  }
+
   let settings = {
     arrows: true,
-    dots: true,
+    prevArrow: <PrevArr />,
+    nextArrow: <NextArr />,
+    speed: 500,
     infinite: true,
-    autoplay: true,
-    speed: 1000
+    fade: true
+  };
+
+  const next = () => {
+    nextEl.current.slickNext();
+  };
+
+  const styler = {
+    display: "block",
+    margin: "0 auto",
+    cursor: "pointer"
   };
 
   return (
     <>
-      <Slider {...settings}>
-        {images.map(({ id, src, alt }) => (
-          <Image key={id} src={src} alt={alt} />
-        ))}
+      <Slider style={styler} ref={nextEl} {...settings}>
+        {images.map(({ id, src, alt, text }, index) => {
+          return text === null ? (
+            <React.Fragment key={id}>
+              <Image src={src} alt={alt} />
+              <ProjectName>Posy</ProjectName>
+            </React.Fragment>
+          ) : (
+            <Text
+              onClick={() => {
+                next();
+              }}
+              key={index}
+            >
+              {text()}
+            </Text>
+          );
+        })}
       </Slider>
-      <Paragraph>
-        <p>
-          <strong>Posy</strong>
-          <br />
-          <br />
-          <br />
-          Concrete injected into nylon socks, hanged to create soft shapes
-          explores the boundaries within this substance.
-          <br />
-          <br />
-          <strong>2019 / Rotterdam</strong>
-          <br />
-          <br />
-          <br />
-          <strong>Photo: Maryam Benzebiba</strong>
-        </p>
-      </Paragraph>
     </>
   );
 };
