@@ -36,3 +36,9 @@ export const ProjectName = styled.div`
   text-align: center;
   padding: 2%;
 `;
+
+export const ActiveNum = styled.div`
+  position: fixed;
+  top: 94%;
+  left: 0.5%;
+`;

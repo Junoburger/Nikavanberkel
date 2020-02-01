@@ -1,12 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
 
-import { Arrow, Text, ProjectName } from "../../../styled_components/Paragraph";
+import {
+  Arrow,
+  Text,
+  ProjectName,
+  ActiveNum
+} from "../../../styled_components/Paragraph";
 import { Image } from "../../../styled_components/Image";
 import { imageLoader } from "../../../assets/projects/Space for one/images";
 
 export const SpaceForOne = () => {
   const [images, imagesSet] = useState([]);
+  const [activeSlide, setActiveSlide] = useState(1);
   const nextEl = useRef(null);
 
   useEffect(() => {
@@ -24,13 +30,22 @@ export const SpaceForOne = () => {
     return <Arrow className={className} onClick={onClick} />;
   }
 
+  function ActiveSlideNum() {
+    return (
+      <>
+        <ActiveNum>{activeSlide}</ActiveNum>
+      </>
+    );
+  }
+
   let settings = {
     arrows: true,
     prevArrow: <PrevArr />,
     nextArrow: <NextArr />,
     speed: 500,
     infinite: true,
-    fade: true
+    fade: true,
+    afterChange: current => setActiveSlide(current + 1)
   };
 
   const next = () => {
@@ -65,6 +80,7 @@ export const SpaceForOne = () => {
           );
         })}
       </Slider>
+      <ActiveSlideNum />
     </>
   );
 };
