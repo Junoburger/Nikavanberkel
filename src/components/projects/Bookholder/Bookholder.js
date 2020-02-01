@@ -15,6 +15,7 @@ export const Bookholder = () => {
   }, []);
 
   function PrevArr(props) {
+    console.log({ props });
     const { className, onClick } = props;
     return <Arrow leftArrow className={className} onClick={onClick} />;
   }
