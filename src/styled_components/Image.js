@@ -3,6 +3,6 @@ import styled from "styled-components";
 export const Image = styled.img`
   position: relative;
   margin: 0 auto;
-  height: 500px;
+  height: 40rem;
   object-fit: contain;
 `;

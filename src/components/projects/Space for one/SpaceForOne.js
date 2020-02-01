@@ -40,7 +40,8 @@ export const SpaceForOne = () => {
   const styler = {
     display: "block",
     margin: "0 auto",
-    cursor: "pointer"
+    cursor: "pointer",
+    outline: "none"
   };
 
   return (
