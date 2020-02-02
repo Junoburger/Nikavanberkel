@@ -39,6 +39,7 @@ export const NavWrapper = styled.div`
   & ${ImageWrapper}:nth-child(3) ${ProjectImage} {
     margin-top: 100px;
     width: 25rem;
+    object-fit: cover;
   }
   & ${ImageWrapper}:nth-child(3) ${Title} {
     margin-top: -25px;

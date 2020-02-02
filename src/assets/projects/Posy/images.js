@@ -33,8 +33,10 @@ const images = [
             Concrete injected into nylon socks, hanged to create soft shapes
             explores the boundaries within this substance.
           </Section>
-          <Section>2019 / Rotterdam</Section>
-          <Section>Photo: Maryam Benzebiba</Section>
+          <Section>
+            2019 / Rotterdam
+            <br /> Photo: Maryam Benzebiba
+          </Section>
         </Paragraph>
       );
     }

@@ -12,7 +12,7 @@ export const Header = styled.div`
 
 export const Section = styled.div`
   position: relative;
-  padding: 20px 0 25px 0;
+  padding: 20px 0 5px 0;
   text-align: left;
   font-size: 10pt;
   white-space: pre-line;

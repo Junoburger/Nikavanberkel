@@ -7,7 +7,7 @@ import img5 from "./Two dimensional vase/front.jpg";
 const projects = [
   {
     id: 1,
-    title: "Albania",
+    title: "From Albania with love",
     src: img11,
     route: "albania"
   },

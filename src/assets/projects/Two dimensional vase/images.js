@@ -15,6 +15,12 @@ import {
 
 const images = [
   {
+    id: 1,
+    src: img1,
+    alt: "foto 10 Two Dimensional Vase",
+    text: null
+  },
+  {
     id: 2,
     src: img2,
     alt: "foto 2 Two Dimensional Vase",
@@ -54,12 +60,6 @@ const images = [
     id: 8,
     src: img8,
     alt: "foto 8 Two Dimensional Vase",
-    text: null
-  },
-  {
-    id: 1,
-    src: img1,
-    alt: "foto 10 Two Dimensional Vase",
     text: null
   },
   {

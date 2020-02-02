@@ -61,7 +61,7 @@ export const Albania = () => {
           return text === null ? (
             <React.Fragment key={id}>
               <Image src={src} alt={alt} />
-              <ProjectName>Albania</ProjectName>
+              <ProjectName>From Albania with love</ProjectName>
             </React.Fragment>
           ) : (
             <Text
