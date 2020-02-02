@@ -35,6 +35,9 @@ export const NavWrapper = styled.div`
   flex-wrap: wrap;
   & ${ImageWrapper}:nth-child(1) ${ProjectImage} {
     margin-right: 150px;
+    @media (max-width: 768px) {
+      margin-right: 50px;
+    }
   }
   & ${ImageWrapper}:nth-child(3) ${ProjectImage} {
     margin-top: 100px;
