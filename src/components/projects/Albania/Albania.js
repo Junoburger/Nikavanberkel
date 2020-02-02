@@ -54,6 +54,7 @@ export const Albania = () => {
     margin: "0 auto",
     cursor: "pointer"
   };
+
   return (
     <>
       <Slider style={styler} ref={nextEl} {...settings}>
