@@ -33,29 +33,53 @@ export const NavWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+
   & ${ImageWrapper}:nth-child(1) ${ProjectImage} {
     margin-right: 150px;
     @media (max-width: 768px) {
-      margin-right: 50px;
+      margin-right: 40px;
+    }
+  }
+
+  & ${ImageWrapper}:nth-child(2) ${ProjectImage} {
+    @media (max-width: 768px) {
+      margin-top: 0px;
     }
   }
   & ${ImageWrapper}:nth-child(3) ${ProjectImage} {
     margin-top: 100px;
     width: 25rem;
     object-fit: cover;
+    @media (max-width: 768px) {
+      margin-top: 0px;
+    }
   }
   & ${ImageWrapper}:nth-child(3) ${Title} {
     margin-top: -25px;
+    @media (max-width: 768px) {
+      margin-top: 0px;
+    }
   }
   & ${ImageWrapper}:nth-child(4) ${ProjectImage} {
     margin-top: 20px;
+    @media (max-width: 768px) {
+      margin-top: 0px;
+    }
   }
   & ${ImageWrapper}:nth-child(5) ${ProjectImage} {
     margin-top: 25px;
     margin-left: -50px;
+    @media (max-width: 768px) {
+      margin-top: 0px;
+      margin-left: 0px;
+    }
   }
   & ${ImageWrapper}:nth-child(5) ${Title} {
     margin-top: 0px;
     margin-left: -100px;
+    @media (max-width: 768px) {
+      margin-top: 0px;
+      margin-left: 0px;
+    }
   }
 `;
