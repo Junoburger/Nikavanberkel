@@ -75,7 +75,7 @@ const images = [
             water container remain invisible, blossoms penetrating the surface
             are multiplied.
           </Section>
-          <Section>Authors: Ada Finci Terseglav, Nika van Berkel</Section>
+          <Section>Authors: Matic Vrabič, Nika van Berkel</Section>
           <Section>Photo: Klemen Ilovar</Section>
         </Paragraph>
       );
