@@ -1,7 +1,7 @@
 import img11 from "./Albania/front.jpg";
 import img2 from "./Bookholder/front.jpg";
 import img3 from "./Posy/front.jpg";
-import img4 from "./Space for one/front.jpg";
+import img4 from "./Space for one/front.png";
 import img5 from "./Two dimensional vase/front.jpg";
 
 const projects = [
