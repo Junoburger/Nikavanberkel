@@ -12,7 +12,7 @@ import img10 from "./10.jpg";
 import {
   Paragraph,
   Header,
-  Section
+  Section,
 } from "../../../styled_components/Paragraph";
 
 const images = [
@@ -20,61 +20,61 @@ const images = [
     id: 1,
     src: img1,
     alt: "foto 1 Albania",
-    text: null
+    text: null,
   },
   {
     id: 2,
     src: img2,
     alt: "foto 2 Albania",
-    text: null
+    text: null,
   },
   {
     id: 3,
     src: img3,
     alt: "foto 3 Albania",
-    text: null
+    text: null,
   },
   {
     id: 4,
     src: img4,
     alt: "foto 4 Albania",
-    text: null
+    text: null,
   },
   {
     id: 5,
     src: img5,
     alt: "foto 5 Albania",
-    text: null
+    text: null,
   },
   {
     id: 6,
     src: img6,
     alt: "foto 6 Albania",
-    text: null
+    text: null,
   },
   {
     id: 7,
     src: img7,
     alt: "foto 7 Albania",
-    text: null
+    text: null,
   },
   {
     id: 8,
     src: img8,
     alt: "foto 8 Albania",
-    text: null
+    text: null,
   },
   {
     id: 9,
     src: img9,
     alt: "foto 9 Albania",
-    text: null
+    text: null,
   },
   {
     id: 10,
     src: img10,
     alt: "foto 10 Albania",
-    text: null
+    text: null,
   },
   {
     id: 11,
@@ -102,13 +102,13 @@ const images = [
           </Section>
           <Section>
             2017 / concept design for Albanian pavilion / Venice Biennale /
-            Competition finalists Authors: Anouk Vogel, Matic Vrabič, Nika van
-            Berkel
+            Competition finalists <br /> Authors: Anouk Vogel, Matic Vrabič,
+            Nika van Berkel
           </Section>
         </Paragraph>
       );
-    }
-  }
+    },
+  },
 ];
 
 export const imageLoader = () => {

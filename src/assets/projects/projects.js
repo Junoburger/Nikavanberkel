@@ -1,7 +1,7 @@
 import img11 from "./Albania/front.jpg";
 import img2 from "./Bookholder/front.jpg";
 import img3 from "./Posy/front.jpg";
-import img4 from "./Space for one/front.png";
+import img4 from "./Space for one/front.jpg";
 import img5 from "./Two dimensional vase/front.jpg";
 
 const projects = [
@@ -9,32 +9,32 @@ const projects = [
     id: 1,
     title: "From Albania with love",
     src: img11,
-    route: "albania"
+    route: "albania",
   },
   {
     id: 2,
     title: "Posy",
     src: img3,
-    route: "posy"
+    route: "posy",
   },
   {
     id: 3,
     title: "Bookholder",
     src: img2,
-    route: "bookholder"
+    route: "bookholder",
   },
   {
     id: 4,
     title: "Two dimensional vase",
     src: img5,
-    route: "twodimensionalvase"
+    route: "twodimensionalvase",
   },
   {
     id: 5,
     title: "Space for one",
     src: img4,
-    route: "spaceforone"
-  }
+    route: "spaceforone",
+  },
 ];
 
 export const projectsLoader = () => {

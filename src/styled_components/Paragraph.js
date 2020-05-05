@@ -25,7 +25,7 @@ export const Text = styled.div`
 
 export const Arrow = styled.div`
   position: fixed;
-  margin-left: ${props => (props.leftArrow ? "90%" : "")};
+  margin-left: ${(props) => (props.leftArrow ? "90%" : "")};
   margin-top: 20rem;
   &&& {
     font-weight: lighter;
@@ -35,6 +35,7 @@ export const Arrow = styled.div`
 export const ProjectName = styled.div`
   text-align: center;
   padding: 2%;
+  font-size: 10pt;
 `;
 
 export const ActiveNum = styled.div`

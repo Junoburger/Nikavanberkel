@@ -3,7 +3,7 @@ import React from "react";
 import {
   Header,
   Paragraph,
-  Section
+  Section,
 } from "../../../styled_components/Paragraph";
 import img1 from "./1.jpg";
 import img2 from "./2.jpg";
@@ -13,13 +13,13 @@ const images = [
     id: 1,
     src: img1,
     alt: "foto 1 Posy",
-    text: null
+    text: null,
   },
   {
     id: 2,
     src: img2,
     alt: "foto 2 Posy",
-    text: null
+    text: null,
   },
   {
     id: 3,
@@ -35,12 +35,12 @@ const images = [
           </Section>
           <Section>
             2019 / Rotterdam
-            <br /> Photo: Maryam Benzebiba
+            <br /> Photography: Maryam Benzebiba
           </Section>
         </Paragraph>
       );
-    }
-  }
+    },
+  },
 ];
 
 export const imageLoader = () => {

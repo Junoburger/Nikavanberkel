@@ -5,7 +5,7 @@ import {
   Text,
   Arrow,
   ProjectName,
-  ActiveNum
+  ActiveNum,
 } from "../../../styled_components/Paragraph";
 import Slider from "react-slick";
 
@@ -43,7 +43,7 @@ export const Albania = () => {
     speed: 500,
     infinite: true,
     fade: true,
-    afterChange: current => setActiveSlide(current + 1)
+    afterChange: (current) => setActiveSlide(current + 1),
   };
 
   const next = () => {
@@ -52,7 +52,7 @@ export const Albania = () => {
   const styler = {
     display: "block",
     margin: "0 auto",
-    cursor: "pointer"
+    cursor: "pointer",
   };
 
   return (

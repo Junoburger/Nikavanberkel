@@ -10,7 +10,7 @@ import img1 from "./1.jpg";
 import {
   Paragraph,
   Header,
-  Section
+  Section,
 } from "../../../styled_components/Paragraph";
 
 const images = [
@@ -18,49 +18,49 @@ const images = [
     id: 1,
     src: img1,
     alt: "foto 10 Two Dimensional Vase",
-    text: null
+    text: null,
   },
   {
     id: 2,
     src: img2,
     alt: "foto 2 Two Dimensional Vase",
-    text: null
+    text: null,
   },
   {
     id: 3,
     src: img3,
     alt: "foto 3 Two Dimensional Vase",
-    text: null
+    text: null,
   },
   {
     id: 4,
     src: img4,
     alt: "foto 4 Two Dimensional Vase",
-    text: null
+    text: null,
   },
   {
     id: 5,
     src: img5,
     alt: "foto 5 Two Dimensional Vase",
-    text: null
+    text: null,
   },
   {
     id: 6,
     src: img6,
     alt: "foto 6 Two Dimensional Vase",
-    text: null
+    text: null,
   },
   {
     id: 7,
     src: img7,
     alt: "foto 7 Two Dimensional Vase",
-    text: null
+    text: null,
   },
   {
     id: 8,
     src: img8,
     alt: "foto 8 Two Dimensional Vase",
-    text: null
+    text: null,
   },
   {
     id: 12,
@@ -75,12 +75,15 @@ const images = [
             water container remain invisible, blossoms penetrating the surface
             are multiplied.
           </Section>
-          <Section>Authors: Matic Vrabič, Nika van Berkel</Section>
-          <Section>Photo: Klemen Ilovar</Section>
+          <Section>
+            Authors: Matic Vrabič, Nika van Berkel
+            <br />
+            Photography: Klemen Ilovar
+          </Section>
         </Paragraph>
       );
-    }
-  }
+    },
+  },
 ];
 
 export const imageLoader = () => {

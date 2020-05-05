@@ -3,7 +3,7 @@ import React from "react";
 import {
   Header,
   Paragraph,
-  Section
+  Section,
 } from "../../../styled_components/Paragraph";
 import img10 from "./10.jpg";
 import img2 from "./2.jpg";
@@ -20,55 +20,55 @@ const images = [
     id: 2,
     src: img2,
     alt: "foto 2 Space for one",
-    text: null
+    text: null,
   },
   {
     id: 3,
     src: img3,
     alt: "foto 3 Space for one",
-    text: null
+    text: null,
   },
   {
     id: 4,
     src: img4,
     alt: "foto 4 Space for one",
-    text: null
+    text: null,
   },
   {
     id: 5,
     src: img5,
     alt: "foto 5 Space for one",
-    text: null
+    text: null,
   },
   {
     id: 6,
     src: img6,
     alt: "foto 6 Space for one",
-    text: null
+    text: null,
   },
   {
     id: 7,
     src: img7,
     alt: "foto 7 Space for one",
-    text: null
+    text: null,
   },
   {
     id: 8,
     src: img8,
     alt: "foto 8 Space for one",
-    text: null
+    text: null,
   },
   {
     id: 9,
     src: img9,
     alt: "foto 9 Space for one",
-    text: null
+    text: null,
   },
   {
     id: 10,
     src: img10,
     alt: "foto 10 Space for one",
-    text: null
+    text: null,
   },
   {
     id: 11,
@@ -94,13 +94,15 @@ const images = [
 
           <Section>
             2019 / interior design / 44 m2 / Ljubljana / Private client
+            <br />
+            Authors: Ada Finci Terseglav, Nika van Berkel
+            <br />
+            Photography: Klemen Ilovar
           </Section>
-          <Section>Authors: Ada Finci Terseglav, Nika van Berkel</Section>
-          <Section>Photo: Klemen Ilovar</Section>
         </Paragraph>
       );
-    }
-  }
+    },
+  },
 ];
 
 export const imageLoader = () => {
