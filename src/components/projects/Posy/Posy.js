@@ -5,12 +5,12 @@ import {
   Arrow,
   Text,
   ProjectName,
-  ActiveNum
+  ActiveNum,
 } from "../../../styled_components/Paragraph";
 import { Image } from "../../../styled_components/Image";
 import { imageLoader } from "../../../assets/projects/Posy/images";
 
-export const Posy = () => {
+const Posy = () => {
   const [images, imagesSet] = useState([]);
   const [activeSlide, setActiveSlide] = useState(1);
   const nextEl = useRef(null);
@@ -44,7 +44,7 @@ export const Posy = () => {
     speed: 500,
     infinite: true,
     fade: true,
-    afterChange: current => setActiveSlide(current + 1)
+    afterChange: (current) => setActiveSlide(current + 1),
   };
 
   const next = () => {
@@ -54,7 +54,7 @@ export const Posy = () => {
   const styler = {
     display: "block",
     margin: "0 auto",
-    cursor: "pointer"
+    cursor: "pointer",
   };
 
   return (
@@ -82,3 +82,4 @@ export const Posy = () => {
     </>
   );
 };
+export default Posy;
