@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Collapse, NavbarToggler, Nav, NavItem, NavLink } from "reactstrap";
+import { Link } from "react-router-dom";
+import { Collapse, NavbarToggler, Nav, NavItem } from "reactstrap";
 import "./Header.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -9,12 +10,12 @@ export class Header extends Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
     };
   }
   toggle() {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: !this.state.isOpen,
     });
   }
   render() {
@@ -22,17 +23,17 @@ export class Header extends Component {
       <div>
         <nav className="navbar navbar-expand-md navbar-light">
           <div>
-            <a href="/">
+            <Link to="/">
               <div className="Name">Nika van Berkel</div>
-            </a>
+            </Link>
           </div>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink className="About" href="/about">
+                <Link className="About" to="/about">
                   About
-                </NavLink>
+                </Link>
               </NavItem>
             </Nav>
           </Collapse>
