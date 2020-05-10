@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Nikavanberkel/static/css/main.338cd4d4.chunk.css",
-    "main.js": "/Nikavanberkel/static/js/main.20a4345d.chunk.js",
-    "main.js.map": "/Nikavanberkel/static/js/main.20a4345d.chunk.js.map",
+    "main.js": "/Nikavanberkel/static/js/main.6ac6eb79.chunk.js",
+    "main.js.map": "/Nikavanberkel/static/js/main.6ac6eb79.chunk.js.map",
     "runtime-main.js": "/Nikavanberkel/static/js/runtime-main.76a68d02.js",
     "runtime-main.js.map": "/Nikavanberkel/static/js/runtime-main.76a68d02.js.map",
     "static/css/2.c232568c.chunk.css": "/Nikavanberkel/static/css/2.c232568c.chunk.css",
@@ -11,7 +11,7 @@
     "static/js/3.d68ac094.chunk.js": "/Nikavanberkel/static/js/3.d68ac094.chunk.js",
     "static/js/3.d68ac094.chunk.js.map": "/Nikavanberkel/static/js/3.d68ac094.chunk.js.map",
     "index.html": "/Nikavanberkel/index.html",
-    "precache-manifest.4d395f9cce7de0499bc188cd9d6ed7f0.js": "/Nikavanberkel/precache-manifest.4d395f9cce7de0499bc188cd9d6ed7f0.js",
+    "precache-manifest.b5d2e231731516b702efc9f68add71f2.js": "/Nikavanberkel/precache-manifest.b5d2e231731516b702efc9f68add71f2.js",
     "service-worker.js": "/Nikavanberkel/service-worker.js",
     "static/css/2.c232568c.chunk.css.map": "/Nikavanberkel/static/css/2.c232568c.chunk.css.map",
     "static/css/main.338cd4d4.chunk.css.map": "/Nikavanberkel/static/css/main.338cd4d4.chunk.css.map",
@@ -36,6 +36,6 @@
     "static/css/2.c232568c.chunk.css",
     "static/js/2.5081411f.chunk.js",
     "static/css/main.338cd4d4.chunk.css",
-    "static/js/main.20a4345d.chunk.js"
+    "static/js/main.6ac6eb79.chunk.js"
   ]
 }

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "11e81b0cd5db14e1c75f661b8c1d647b",
+    "revision": "db74633642a167b7dd64be52c818b16b",
     "url": "/Nikavanberkel/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Nikavanberkel/static/css/2.c232568c.chunk.css"
   },
   {
-    "revision": "bb9547ddb5367f9324ae",
+    "revision": "b9824c3f544c05deca8d",
     "url": "/Nikavanberkel/static/css/main.338cd4d4.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Nikavanberkel/static/js/3.d68ac094.chunk.js"
   },
   {
-    "revision": "bb9547ddb5367f9324ae",
-    "url": "/Nikavanberkel/static/js/main.20a4345d.chunk.js"
+    "revision": "b9824c3f544c05deca8d",
+    "url": "/Nikavanberkel/static/js/main.6ac6eb79.chunk.js"
   },
   {
     "revision": "897500e1db030e77ad86",
