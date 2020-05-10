@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/Nikavanberkel/static/css/main.338cd4d4.chunk.css",
-    "main.js": "/Nikavanberkel/static/js/main.b2b9dec2.chunk.js",
-    "main.js.map": "/Nikavanberkel/static/js/main.b2b9dec2.chunk.js.map",
+    "main.js": "/Nikavanberkel/static/js/main.3ffc0791.chunk.js",
+    "main.js.map": "/Nikavanberkel/static/js/main.3ffc0791.chunk.js.map",
     "runtime-main.js": "/Nikavanberkel/static/js/runtime-main.76a68d02.js",
     "runtime-main.js.map": "/Nikavanberkel/static/js/runtime-main.76a68d02.js.map",
-    "static/css/2.7b9802ef.chunk.css": "/Nikavanberkel/static/css/2.7b9802ef.chunk.css",
-    "static/js/2.70abc4f7.chunk.js": "/Nikavanberkel/static/js/2.70abc4f7.chunk.js",
-    "static/js/2.70abc4f7.chunk.js.map": "/Nikavanberkel/static/js/2.70abc4f7.chunk.js.map",
+    "static/css/2.c232568c.chunk.css": "/Nikavanberkel/static/css/2.c232568c.chunk.css",
+    "static/js/2.5081411f.chunk.js": "/Nikavanberkel/static/js/2.5081411f.chunk.js",
+    "static/js/2.5081411f.chunk.js.map": "/Nikavanberkel/static/js/2.5081411f.chunk.js.map",
     "static/js/3.d68ac094.chunk.js": "/Nikavanberkel/static/js/3.d68ac094.chunk.js",
     "static/js/3.d68ac094.chunk.js.map": "/Nikavanberkel/static/js/3.d68ac094.chunk.js.map",
     "index.html": "/Nikavanberkel/index.html",
-    "precache-manifest.0d4d0084edccb749f97d7afa6ed5d829.js": "/Nikavanberkel/precache-manifest.0d4d0084edccb749f97d7afa6ed5d829.js",
+    "precache-manifest.e6c5868d84354fb496ca4d9cda034ec0.js": "/Nikavanberkel/precache-manifest.e6c5868d84354fb496ca4d9cda034ec0.js",
     "service-worker.js": "/Nikavanberkel/service-worker.js",
-    "static/css/2.7b9802ef.chunk.css.map": "/Nikavanberkel/static/css/2.7b9802ef.chunk.css.map",
+    "static/css/2.c232568c.chunk.css.map": "/Nikavanberkel/static/css/2.c232568c.chunk.css.map",
     "static/css/main.338cd4d4.chunk.css.map": "/Nikavanberkel/static/css/main.338cd4d4.chunk.css.map",
-    "static/js/2.70abc4f7.chunk.js.LICENSE": "/Nikavanberkel/static/js/2.70abc4f7.chunk.js.LICENSE",
+    "static/js/2.5081411f.chunk.js.LICENSE": "/Nikavanberkel/static/js/2.5081411f.chunk.js.LICENSE",
     "static/media/1.jpg": "/Nikavanberkel/static/media/1.e2cac223.jpg",
     "static/media/10.jpg": "/Nikavanberkel/static/media/10.fae85171.jpg",
     "static/media/2.jpg": "/Nikavanberkel/static/media/2.780f6fe5.jpg",
@@ -33,9 +33,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.76a68d02.js",
-    "static/css/2.7b9802ef.chunk.css",
-    "static/js/2.70abc4f7.chunk.js",
+    "static/css/2.c232568c.chunk.css",
+    "static/js/2.5081411f.chunk.js",
     "static/css/main.338cd4d4.chunk.css",
-    "static/js/main.b2b9dec2.chunk.js"
+    "static/js/main.3ffc0791.chunk.js"
   ]
 }
