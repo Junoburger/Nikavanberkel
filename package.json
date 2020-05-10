@@ -1,5 +1,5 @@
 {
-  "homepage": "https://junoburger.github.io/Nikavanberkel/",
+  "homepage": "https://www.nikavanberkel.com/",
   "name": "nikavanberkelcom",
   "author": "Juno J R Burger",
   "version": "0.1.0",
@@ -25,7 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "copy": "cp ./CNAME ./build/CNAME",
+    "predeploy": "npm run build && npm run copy",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
