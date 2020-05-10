@@ -94,11 +94,10 @@ const images = [
           </Section>
           <Section>
             With the gesture of »breaking the wall« we want to open up and
-            expand the space of the Albanian pavilion into the city.
-            <br /> With this gesture we want to show to the wider public that we
-            should always question the borders and try to look beyond,
-            <br /> that we can always push the boundaries and improve the public
-            space in the cities.
+            expand the space of the Albanian pavilion into the city. With this
+            gesture we want to show to the wider public that we should always
+            question the borders and try to look beyond, that we can always push
+            the boundaries and improve the public space in the cities.
           </Section>
           <Section>
             2017 / concept design for Albanian pavilion / Venice Biennale /
