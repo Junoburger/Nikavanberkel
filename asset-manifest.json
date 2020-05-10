@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/Nikavanberkel/static/css/main.338cd4d4.chunk.css",
+    "main.js": "/Nikavanberkel/static/js/main.cc533e8e.chunk.js",
+    "main.js.map": "/Nikavanberkel/static/js/main.cc533e8e.chunk.js.map",
+    "runtime-main.js": "/Nikavanberkel/static/js/runtime-main.76a68d02.js",
+    "runtime-main.js.map": "/Nikavanberkel/static/js/runtime-main.76a68d02.js.map",
+    "static/css/2.7b9802ef.chunk.css": "/Nikavanberkel/static/css/2.7b9802ef.chunk.css",
+    "static/js/2.70abc4f7.chunk.js": "/Nikavanberkel/static/js/2.70abc4f7.chunk.js",
+    "static/js/2.70abc4f7.chunk.js.map": "/Nikavanberkel/static/js/2.70abc4f7.chunk.js.map",
+    "static/js/3.d68ac094.chunk.js": "/Nikavanberkel/static/js/3.d68ac094.chunk.js",
+    "static/js/3.d68ac094.chunk.js.map": "/Nikavanberkel/static/js/3.d68ac094.chunk.js.map",
+    "index.html": "/Nikavanberkel/index.html",
+    "precache-manifest.054b898d7afcb384a0263b38d245774c.js": "/Nikavanberkel/precache-manifest.054b898d7afcb384a0263b38d245774c.js",
+    "service-worker.js": "/Nikavanberkel/service-worker.js",
+    "static/css/2.7b9802ef.chunk.css.map": "/Nikavanberkel/static/css/2.7b9802ef.chunk.css.map",
+    "static/css/main.338cd4d4.chunk.css.map": "/Nikavanberkel/static/css/main.338cd4d4.chunk.css.map",
+    "static/js/2.70abc4f7.chunk.js.LICENSE": "/Nikavanberkel/static/js/2.70abc4f7.chunk.js.LICENSE",
+    "static/media/1.jpg": "/Nikavanberkel/static/media/1.e2cac223.jpg",
+    "static/media/10.jpg": "/Nikavanberkel/static/media/10.fae85171.jpg",
+    "static/media/2.jpg": "/Nikavanberkel/static/media/2.780f6fe5.jpg",
+    "static/media/3.jpg": "/Nikavanberkel/static/media/3.c9245cd5.jpg",
+    "static/media/3.png": "/Nikavanberkel/static/media/3.312da26c.png",
+    "static/media/4.jpg": "/Nikavanberkel/static/media/4.a3105897.jpg",
+    "static/media/4.png": "/Nikavanberkel/static/media/4.6e295a61.png",
+    "static/media/5.jpg": "/Nikavanberkel/static/media/5.e9722460.jpg",
+    "static/media/6.jpg": "/Nikavanberkel/static/media/6.c494beb9.jpg",
+    "static/media/7.jpg": "/Nikavanberkel/static/media/7.c3d889ec.jpg",
+    "static/media/8.jpg": "/Nikavanberkel/static/media/8.e655a805.jpg",
+    "static/media/9.jpg": "/Nikavanberkel/static/media/9.1dea019f.jpg",
+    "static/media/front.jpg": "/Nikavanberkel/static/media/front.da25bfeb.jpg",
+    "static/media/slick-theme.css": "/Nikavanberkel/static/media/slick.f97e3bbf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76a68d02.js",
+    "static/css/2.7b9802ef.chunk.css",
+    "static/js/2.70abc4f7.chunk.js",
+    "static/css/main.338cd4d4.chunk.css",
+    "static/js/main.cc533e8e.chunk.js"
+  ]
+}
