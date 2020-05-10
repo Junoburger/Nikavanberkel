@@ -26,18 +26,34 @@ const App: () => JSX.Element = () => {
     <Router>
       <>
         <Header></Header>
-        <Route exact path="/" component={Main} />
-        <Route exact path="/about" component={Bio} />
-        <Route exact path="/albania" component={Albania} />
-        <Route exact path="/bookholder" component={Bookholder} />
-        <React.Suspense fallback={<LoadingState />}>
-          <Route exact path="/posy" component={Posy} />
-        </React.Suspense>
-
-        <Route exact path="/spaceforone" component={SpaceForOne} />
+        <Route exact path={process.env.PUBLIC_URL + "/"} component={Main} />
+        <Route exact path={process.env.PUBLIC_URL + "/about"} component={Bio} />
         <Route
           exact
-          path="/twodimensionalvase"
+          path={process.env.PUBLIC_URL + "/albania"}
+          component={Albania}
+        />
+        <Route
+          exact
+          path={process.env.PUBLIC_URL + "/bookholder"}
+          component={Bookholder}
+        />
+        <React.Suspense fallback={<LoadingState />}>
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/posy"}
+            component={Posy}
+          />
+        </React.Suspense>
+
+        <Route
+          exact
+          path={process.env.PUBLIC_URL + "/spaceforone"}
+          component={SpaceForOne}
+        />
+        <Route
+          exact
+          path={process.env.PUBLIC_URL + "/twodimensionalvase"}
           component={TwoDimensionalVase}
         />
       </>
