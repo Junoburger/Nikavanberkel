@@ -5,11 +5,11 @@ import {
   Text,
   Arrow,
   ProjectName,
-  ActiveNum
+  ActiveNum,
 } from "../../../styled_components/Paragraph";
 import Slider from "react-slick";
 
-export const Bookholder = () => {
+const Bookholder = () => {
   const [images, imagesSet] = useState([]);
   const [activeSlide, setActiveSlide] = useState(1);
   const nextEl = useRef(null);
@@ -43,7 +43,7 @@ export const Bookholder = () => {
     speed: 500,
     infinite: true,
     fade: true,
-    afterChange: current => setActiveSlide(current + 1)
+    afterChange: (current) => setActiveSlide(current + 1),
   };
 
   const next = () => {
@@ -53,7 +53,7 @@ export const Bookholder = () => {
   const styler = {
     display: "block",
     margin: "0 auto",
-    cursor: "pointer"
+    cursor: "pointer",
   };
 
   return (
@@ -81,3 +81,5 @@ export const Bookholder = () => {
     </>
   );
 };
+
+export default Bookholder;

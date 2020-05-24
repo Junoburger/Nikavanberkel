@@ -9,7 +9,7 @@ import {
 } from "../../../styled_components/Paragraph";
 import Slider from "react-slick";
 
-export const Albania = () => {
+const Albania = () => {
   const [images, imagesSet] = useState([]);
   const [activeSlide, setActiveSlide] = useState(1);
   const nextEl = useRef(null);
@@ -80,3 +80,5 @@ export const Albania = () => {
     </>
   );
 };
+
+export default Albania;

@@ -5,9 +5,8 @@ export const Bio = (props) => {
   return (
     <>
       <About>
-        <p>+31 6 38 45 63 49</p>
-        <br />
         <p>nika.van.berkel@gmail.com</p>
+        <p>+31 6 38 45 63 49</p>
       </About>
     </>
   );

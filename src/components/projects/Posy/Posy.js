@@ -64,6 +64,7 @@ const Posy = () => {
           return text === null ? (
             <React.Fragment key={id}>
               <Image src={src} alt={alt} />
+
               <ProjectName>Posy</ProjectName>
             </React.Fragment>
           ) : (

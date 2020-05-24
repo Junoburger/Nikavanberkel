@@ -4,12 +4,12 @@ import {
   Arrow,
   Text,
   ProjectName,
-  ActiveNum
+  ActiveNum,
 } from "../../../styled_components/Paragraph";
 import { Image } from "../../../styled_components/Image";
 import Slider from "react-slick";
 
-export const TwoDimensionalVase = () => {
+const TwoDimensionalVase = () => {
   const [images, imagesSet] = useState([]);
   const [activeSlide, setActiveSlide] = useState(1);
   const nextEl = useRef(null);
@@ -43,7 +43,7 @@ export const TwoDimensionalVase = () => {
     speed: 500,
     infinite: true,
     fade: true,
-    afterChange: current => setActiveSlide(current + 1)
+    afterChange: (current) => setActiveSlide(current + 1),
   };
 
   const next = () => {
@@ -53,7 +53,7 @@ export const TwoDimensionalVase = () => {
   const styler = {
     display: "block",
     margin: "0 auto",
-    cursor: "pointer"
+    cursor: "pointer",
   };
 
   return (
@@ -81,3 +81,5 @@ export const TwoDimensionalVase = () => {
     </>
   );
 };
+
+export default TwoDimensionalVase;

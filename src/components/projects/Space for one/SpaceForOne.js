@@ -5,12 +5,12 @@ import {
   Arrow,
   Text,
   ProjectName,
-  ActiveNum
+  ActiveNum,
 } from "../../../styled_components/Paragraph";
 import { Image } from "../../../styled_components/Image";
 import { imageLoader } from "../../../assets/projects/Space for one/images";
 
-export const SpaceForOne = () => {
+const SpaceForOne = () => {
   const [images, imagesSet] = useState([]);
   const [activeSlide, setActiveSlide] = useState(1);
   const nextEl = useRef(null);
@@ -45,7 +45,7 @@ export const SpaceForOne = () => {
     speed: 500,
     infinite: true,
     fade: true,
-    afterChange: current => setActiveSlide(current + 1)
+    afterChange: (current) => setActiveSlide(current + 1),
   };
 
   const next = () => {
@@ -56,7 +56,7 @@ export const SpaceForOne = () => {
     display: "block",
     margin: "0 auto",
     cursor: "pointer",
-    outline: "none"
+    outline: "none",
   };
 
   return (
@@ -84,3 +84,5 @@ export const SpaceForOne = () => {
     </>
   );
 };
+
+export default SpaceForOne;
