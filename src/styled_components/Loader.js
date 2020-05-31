@@ -21,5 +21,5 @@ export const Loader = styled.div`
   animation: ${loader} 2s infinite ease-in-out;
   min-width: 30rem;
   min-height: 40rem;
-  background: rgba(10, 10, 10, 0.1);
+  background: rgba(256, 256, 256, 0.1);
 `;
