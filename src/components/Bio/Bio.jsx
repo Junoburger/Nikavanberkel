@@ -29,7 +29,18 @@ export const Bio = (props) => {
           <li>
             2017 Exhibition Arhitektura Inventura, Plečnik’s Former Central stadium, Ljubljana (SI)
           </li>
-          <li></li>
+          <li>2017 Magazine Outsider - Plečnik’s Former Central stadium, Ljubljana (SI)</li>
+          <li>
+            2017 Preverjeno - Informative broadcast on topic of Plečnik’s Former Central stadium,
+            Ljubljana (SI)
+          </li>
+          <li>2016 Yearbook of Faculty of Architecture, Ljubljana (SI)</li>
+          <li>2015 Dnevnik, 30.November, Ljubljana (SI), p.11</li>
+          <li>2015 Praznine, 9th edition, Ljubljana (SI), p.106-113</li>
+          <li>
+            2015 Prešeren student award / Master thesis / Revitalisation of the former Jože Plečnik
+            stadium, Ljubljana (SI)
+          </li>
         </ul>
         <p>nika.van.berkel@gmail.com</p>
         <p>+31 6 38 45 63 49</p>
