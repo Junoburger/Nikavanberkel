@@ -13,17 +13,14 @@ import { LoadingState } from "./LoadingState";
 
 // START LAZY IMPORTS
 const Posy = React.lazy(() => import("./components/projects/Posy/Posy"));
-const Bookholder = React.lazy(() =>
-  import("./components/projects/Bookholder/Bookholder")
+const Bookholder = React.lazy(() => import("./components/projects/Bookholder/Bookholder"));
+const Albania = React.lazy(() => import("./components/projects/Albania/Albania"));
+const SpaceForOne = React.lazy(() => import("./components/projects/Space for one/SpaceForOne"));
+const TwoDimensionalVase = React.lazy(
+  () => import("./components/projects/Two dimensional vase/TwoDimensionalVase")
 );
-const Albania = React.lazy(() =>
-  import("./components/projects/Albania/Albania")
-);
-const SpaceForOne = React.lazy(() =>
-  import("./components/projects/Space for one/SpaceForOne")
-);
-const TwoDimensionalVase = React.lazy(() =>
-  import("./components/projects/Two dimensional vase/TwoDimensionalVase")
+const MetropolitanArcadia = React.lazy(
+  () => import("./components/projects/Metropolitan Arcadia/MetropolitanArcadia")
 );
 // END LAZY IMPORTS
 
@@ -47,11 +44,10 @@ const App: () => JSX.Element = () => {
           <Route exact path="/spaceforone" component={SpaceForOne} />
         </Suspense>
         <Suspense fallback={<LoadingState />}>
-          <Route
-            exact
-            path="/twodimensionalvase"
-            component={TwoDimensionalVase}
-          />
+          <Route exact path="/twodimensionalvase" component={TwoDimensionalVase} />
+        </Suspense>
+        <Suspense fallback={<LoadingState />}>
+          <Route exact path="/metropolitan-arcadia" component={MetropolitanArcadia} />
         </Suspense>
       </>
     </Router>
