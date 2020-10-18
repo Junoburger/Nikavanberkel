@@ -5,3 +5,9 @@ export const About = styled.div`
   font-weight: lighter;
   font-size: 10pt;
 `;
+
+export const AboutParaGraph = styled.p`
+  display: flex;
+  width: 28rem;
+  text-align: left;
+`;
