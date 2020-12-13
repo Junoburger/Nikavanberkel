@@ -37,9 +37,3 @@ export const ProjectName = styled.div`
   padding: 2%;
   font-size: 10pt;
 `;
-
-export const ActiveNum = styled.div`
-  position: fixed;
-  top: 94%;
-  left: 0.5%;
-`;

@@ -1,10 +1,12 @@
 import React from "react";
 import { About, AboutParaGraph } from "../../styled_components/About";
 
-export const Bio = (props) => {
+export const Bio = () => {
   return (
     <>
       <About>
+        <p>nika.van.berkel@gmail.com</p>
+        <p>+31 6 38 45 63 49</p>
         <AboutParaGraph>
           Nika van Berkel is testing boundaries between architecture, object design and art. Flowing
           in between conceptual thinking, researching endless possibilities and finding beauty in
@@ -16,16 +18,14 @@ export const Bio = (props) => {
         <div>Publicity:</div>
         <br />
         <ul style={{ listStyle: "none", marginLeft: "-40px" }}>
+          <li>
+            2020 NONUMENT! Symposium Ljubljana, Public Space in Extremis - Lecture on Plečnik’s
+            Former Central stadium, Ljubljana (SI)
+          </li>
           <li>2019 BIG See award - Space for One, Ljubljana (SI)</li>
           <li>2019 HIŠE - Space for One, Ljubljana (SI) , p.108</li>
           <li>2019 Magazine Outsider - Space for One, Ljubljana (SI), p.102</li>
-          <li>
-            2019&nbsp;
-            <a href="Https://www.tvambienti.si" target="_blank" rel="noopener noreferrer">
-              tvambienti.si
-            </a>
-            - Space for One, Ljubljana (SI)
-          </li>
+          <li>2019&nbsp;tvambienti.si - Space for One, Ljubljana (SI)</li>
           <li>
             2017 Exhibition Arhitektura Inventura, Plečnik’s Former Central stadium, Ljubljana (SI)
           </li>
@@ -42,8 +42,6 @@ export const Bio = (props) => {
             stadium, Ljubljana (SI)
           </li>
         </ul>
-        <p>nika.van.berkel@gmail.com</p>
-        <p>+31 6 38 45 63 49</p>
       </About>
     </>
   );
