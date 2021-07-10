@@ -25,30 +25,41 @@ const MetropolitanArcadia = React.lazy(
 // END LAZY IMPORTS
 
 const App: () => JSX.Element = () => {
+  const style = {
+    // width: " 100%",
+    // margin: "0 auto",
+    // display: "inline-block",
+    // maxWidth: "100%",
+    // height: "auto",
+    // width: "auto",
+  };
+
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <>
         <Header></Header>
-        <Route exact path="/" component={Main} />
-        <Route exact path="/about" component={Bio} />
-        <Suspense fallback={<LoadingState />}>
-          <Route exact path="/albania" component={Albania} />
-        </Suspense>
-        <Suspense fallback={<LoadingState />}>
-          <Route exact path="/bookholder" component={Bookholder} />
-        </Suspense>
-        <Suspense fallback={<LoadingState />}>
-          <Route exact path="/posy" component={Posy} />
-        </Suspense>
-        <Suspense fallback={<LoadingState />}>
-          <Route exact path="/spaceforone" component={SpaceForOne} />
-        </Suspense>
-        <Suspense fallback={<LoadingState />}>
-          <Route exact path="/twodimensionalvase" component={TwoDimensionalVase} />
-        </Suspense>
-        <Suspense fallback={<LoadingState />}>
-          <Route exact path="/metropolitan-arcadia" component={MetropolitanArcadia} />
-        </Suspense>
+        <div style={style}>
+          <Route exact path="/" component={Main} />
+          <Route exact path="/about" component={Bio} />
+          <Suspense fallback={<LoadingState />}>
+            <Route exact path="/albania" component={Albania} />
+          </Suspense>
+          <Suspense fallback={<LoadingState />}>
+            <Route exact path="/bookholder" component={Bookholder} />
+          </Suspense>
+          <Suspense fallback={<LoadingState />}>
+            <Route exact path="/posy" component={Posy} />
+          </Suspense>
+          <Suspense fallback={<LoadingState />}>
+            <Route exact path="/spaceforone" component={SpaceForOne} />
+          </Suspense>
+          <Suspense fallback={<LoadingState />}>
+            <Route exact path="/twodimensionalvase" component={TwoDimensionalVase} />
+          </Suspense>
+          <Suspense fallback={<LoadingState />}>
+            <Route exact path="/metropolitan-arcadia" component={MetropolitanArcadia} />
+          </Suspense>
+        </div>
       </>
     </Router>
   );

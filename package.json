@@ -49,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.12.0",
     "gh-pages": "^2.2.0",
     "react-snap": "^1.23.0"
   }
