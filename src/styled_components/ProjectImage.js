@@ -1,4 +1,4 @@
-import styled from "styled-components/macro";
+import styled from "styled-components";
 
 export const ProjectImage = styled.img`
 	max-width: 15rem;

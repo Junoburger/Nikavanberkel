@@ -26,37 +26,35 @@ export const Main = () => {
 	}, []);
 
 	return (
-		<>
-			<NavWrapper>
-				{projects.map(({ id, title, route, src }, index) => (
-					<ImageWrapper id={id} key={id}>
-						<NavLink
-							activeClassName="active"
-							className="Nav_link"
-							exact={true}
-							to={`/${route}`}
-						>
-							<ProjectWrapper
-								displayTitle={displayTitle}
-								onMouseEnter={() => {
-									if (index + 1 === id && document.getElementById(id).id) {
-										if (title.toLowerCase().replace(/\s/g, "") === route) {
-											setDisplayTitle(true);
-										}
+		<NavWrapper>
+			{projects.map(({ id, title, route, src }, index) => (
+				<ImageWrapper id={id} key={id}>
+					<NavLink
+						activeClassName="active"
+						className="Nav_link"
+						exact={true}
+						to={`/${route}`}
+					>
+						<ProjectWrapper
+							displayTitle={displayTitle}
+							onMouseEnter={() => {
+								if (index + 1 === id && document.getElementById(id).id) {
+									if (title.toLowerCase().replace(/\s/g, "") === route) {
+										setDisplayTitle(true);
 									}
-								}}
-								onMouseLeave={() => {
-									setDisplayTitle(false);
-								}}
-								style={flexStyle}
-							>
-								<ProjectImage src={src} alt={title} />
-								<Title displayTitle={displayTitle}>{title}</Title>
-							</ProjectWrapper>
-						</NavLink>
-					</ImageWrapper>
-				))}
-			</NavWrapper>
-		</>
+								}
+							}}
+							onMouseLeave={() => {
+								setDisplayTitle(false);
+							}}
+							style={flexStyle}
+						>
+							<ProjectImage src={src} alt={title} />
+							<Title displayTitle={displayTitle}>{title}</Title>
+						</ProjectWrapper>
+					</NavLink>
+				</ImageWrapper>
+			))}
+		</NavWrapper>
 	);
 };

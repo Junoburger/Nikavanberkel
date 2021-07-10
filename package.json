@@ -1,56 +1,55 @@
 {
-  "homepage": "https://www.nikavanberkel.com/",
-  "name": "nikavanberkelcom",
-  "author": "Juno J R Burger",
-  "version": "0.1.0",
-  "private": true,
-  "engines": {
-    "node": "12.x"
-  },
-  "dependencies": {
-    "@types/react": "^16.14.2",
-    "@types/react-router-dom": "^5.1.6",
-    "bootstrap": "^4.5.3",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^1.1.5",
-    "react-slick": "^0.25.2",
-    "reactstrap": "^7.0.2",
-    "slick-carousel": "^1.8.1",
-    "styled-components": "^5.2.1",
-    "typescript": "^3.9.7"
-  },
-  "scripts": {
-    "runner": "react-scripts start",
-    "start": "npm install -g serve && serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "copy": "cp ./CNAME ./build/CNAME",
-    "predeploy": "npm run build && npm run copy",
-    "deploy": "gh-pages -d build",
-    "postbuild": "react-snap"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "babel-plugin-styled-components": "^1.12.0",
-    "gh-pages": "^2.2.0",
-    "react-snap": "^1.13.1"
-  }
+	"homepage": "https://www.nikavanberkel.com/",
+	"name": "nikavanberkelcom",
+	"author": "Juno J R Burger",
+	"version": "0.1.0",
+	"private": true,
+	"engines": {
+		"node": "12.x"
+	},
+	"dependencies": {
+		"@types/react": "^16.14.2",
+		"@types/react-router-dom": "^5.1.6",
+		"bootstrap": "^4.5.3",
+		"react": "^16.14.0",
+		"react-dom": "^16.14.0",
+		"react-router": "^5.2.0",
+		"react-router-dom": "^5.2.0",
+		"react-scripts": "^1.1.5",
+		"react-slick": "^0.25.2",
+		"reactstrap": "^7.0.2",
+		"slick-carousel": "^1.8.1",
+		"styled-components": "^5.2.1",
+		"typescript": "^3.9.7"
+	},
+	"scripts": {
+		"runner": "react-scripts start",
+		"start": "npm install -g serve && serve -s build",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"copy": "cp ./CNAME ./build/CNAME",
+		"predeploy": "npm run build && npm run copy",
+		"deploy": "gh-pages -d build",
+		"postbuild": "react-snap"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"babel-plugin-styled-components": "^1.12.0",
+		"gh-pages": "^2.2.0",
+		"react-snap": "^1.23.0"
+	}
 }
