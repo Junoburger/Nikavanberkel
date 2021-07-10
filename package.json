@@ -15,7 +15,7 @@
     "react-dom": "^16.14.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.4",
+    "react-scripts": "^1.1.5",
     "react-slick": "^0.25.2",
     "reactstrap": "^7.0.2",
     "slick-carousel": "^1.8.1",
@@ -51,6 +51,6 @@
   "devDependencies": {
     "babel-plugin-styled-components": "^1.12.0",
     "gh-pages": "^2.2.0",
-    "react-snap": "^1.23.0"
+    "react-snap": "^1.13.1"
   }
 }
