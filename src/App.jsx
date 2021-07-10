@@ -30,7 +30,9 @@ const App = () => {
 	};
 	const routesStyle = {
 		marginTop: `${
-			window.devicePixelRatio < 2 ? window.innerHeight / 125 : window.innerHeight / 255
+			window && window.devicePixelRatio < 2
+				? window.innerHeight / 125
+				: window.innerHeight / 450
 		}%`,
 	};
 	return (
