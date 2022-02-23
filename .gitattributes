@@ -11,4 +11,4 @@
 *.gitattributes text
 .gitignore text
 *.md text
-*.js linguist-language=Coffeescript
+*.js linguist-language=WebAssembly
