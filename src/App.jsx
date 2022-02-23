@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Header } from "./components/UI/Header";
 import { Main } from "./components/Main/Main";
@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./master.css";
 import "./App.css";
 import { LoadingState } from "./LoadingState";
+import AltoonaPark from "./components/projects/Altoona park/AltoonaPark";
 
 // START LAZY IMPORTS
 const Posy = React.lazy(() => import("./components/projects/Posy/Posy"));
@@ -25,14 +26,22 @@ const MetropolitanArcadia = React.lazy(() =>
 // END LAZY IMPORTS
 
 const App = () => {
+	const [pixleRatio, setPixelRatio] = useState(0);
+	const [innerHeight, setInnerHeight] = useState(0);
+
+	useEffect(() => {
+		if (window) {
+			setPixelRatio(window.devicePixelRatio);
+			setInnerHeight(window.innerHeight);
+		}
+	}, []);
+
 	const style = {
 		height: "100vh",
 	};
 	const routesStyle = {
 		marginTop: `${
-			window && window.devicePixelRatio < 2
-				? window.innerHeight / 125
-				: window.innerHeight / 450
+			pixleRatio && innerHeight && pixleRatio < 2 ? innerHeight / 125 : innerHeight / 450
 		}%`,
 	};
 	return (
@@ -40,6 +49,7 @@ const App = () => {
 			<Header></Header>
 			<div id="ROUTES_CONTAINER" style={style}>
 				<Route exact path="/" component={Main} />
+
 				<div style={routesStyle}>
 					<Route exact path="/about" component={Bio} />
 					<Suspense fallback={<LoadingState />}>
@@ -59,6 +69,9 @@ const App = () => {
 					</Suspense>
 					<Suspense fallback={<LoadingState />}>
 						<Route exact path="/metropolitan-arcadia" component={MetropolitanArcadia} />
+					</Suspense>
+					<Suspense fallback={<LoadingState />}>
+						<Route exact path="/altoona-park" component={AltoonaPark} />
 					</Suspense>
 				</div>
 			</div>

@@ -18,6 +18,13 @@ export const Bio = () => {
 			<br />
 			<ul style={{ listStyle: "none", marginLeft: "-40px" }}>
 				<li>
+					2021 &nbsp;Magazine Outsider&nbsp;
+					<a href="https://outsider.si/nika-van-berkel-spajanje-razlicnih-praks-lahko-razgrne-veliko-neodkritega/">
+						- Interview,&nbsp;
+					</a>
+					Ljubljana (SI)
+				</li>
+				<li>
 					2020 NONUMENT! Symposium Ljubljana, Public Space in Extremis - Lecture on
 					Plečnik’s Former Central stadium, Ljubljana (SI)
 				</li>
